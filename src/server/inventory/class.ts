@@ -1,28 +1,71 @@
 import { TriggerEventHooks } from '@common/hooks';
 import { BaseInventory } from '@common/inventory/class';
 import type { InventoryItem, ItemProperties } from '@common/item';
+import type { BridgePlayerData } from '../bridge';
+import { syncInventory } from '../bridge';
 import db from '../db';
 import { CreateItem, GetItemClass } from '../item';
+
+// Account items that need to sync with framework money
+const ACCOUNT_ITEMS = ['money', 'bank', 'black_money'];
 
 const drops: string[] = [];
 
 on('playerJoining', () => drops.length && emitNet('ox_inventory:addInventoryGrid', -1, drops));
+
+export interface InventoryPlayerData extends BridgePlayerData {
+  ped?: number;
+}
 
 export class Inventory extends BaseInventory {
   #openedBy: Map<number, string> = new Map();
 
   public entityId?: number;
 
+  /** Player-specific data (only for player inventories) */
+  public player?: InventoryPlayerData;
+
+  /** Current shop the player has open */
+  public currentShop?: string;
+
+  /** Container slot if viewing a container item */
+  public containerSlot?: number;
+
+  /** Currently equipped weapon's unique ID */
+  public usingItem?: any;
+
+  /** Group restrictions for this inventory (jobs, gangs, etc.) */
+  public groups?: Record<string, number>;
+
+  /** Stored/confiscated inventory ID */
+  public confiscatedId?: string;
+
+  /** Model for drop objects (weapons display their model) */
+  public model?: string;
+
   constructor(data: Partial<Inventory>) {
+    if (data.groups) this.groups = data.groups;
     super(data);
     this.entityId = data.entityId;
+    this.model = data.model;
 
     if (data.type === 'drop') {
       drops.push(this.inventoryId);
-      emitNet('ox_inventory:addInventoryGrid', -1, data);
+      // Include model in the grid data for client-side object spawning
+      emitNet('ox_inventory:addInventoryGrid', -1, {
+        ...data,
+        model: this.model,
+      });
     }
 
-    const items = db.getInventoryItems(this.inventoryId);
+    // For player inventories, also check for items stored under legacy source-based IDs
+    // Old v3 bug stored items as player:1, player:2 etc. instead of player:citizenid
+    // Try to find and migrate those items using the playerId if available
+    let alternateId: string | undefined;
+    if (data.type === 'player' && data.playerId) {
+      alternateId = `player:${data.playerId}`;
+    }
+    const items = db.getInventoryItems(this.inventoryId, alternateId);
 
     for (const data of items) {
       try {
@@ -158,6 +201,12 @@ export class Inventory extends BaseInventory {
    */
   public async addItem(data: ItemProperties) {
     const Item = GetItemClass(data.name);
+
+    if (!Item) {
+      console.error(`[ox_inventory] Cannot add item - item class not found for '${data.name}'`);
+      return null;
+    }
+
     const item = new Item(data);
     item.inventoryId = this.inventoryId;
 
@@ -176,6 +225,11 @@ export class Inventory extends BaseInventory {
 
     const success = item.move(this, slots[0]);
     hook.success = !!success;
+
+    // Sync with framework if this is a player inventory and an account item changed
+    if (success && this.player && ACCOUNT_ITEMS.includes(data.name)) {
+      syncInventory(this);
+    }
 
     return success ? item : null;
   }
@@ -220,6 +274,11 @@ export class Inventory extends BaseInventory {
       if (quantity < 1) break;
     }
 
+    // Sync with framework if this is a player inventory and an account item changed
+    if (this.player && ACCOUNT_ITEMS.includes(data.name)) {
+      syncInventory(this);
+    }
+
     return true;
   }
 
@@ -247,5 +306,127 @@ export class Inventory extends BaseInventory {
     GetItemClass(item.name);
 
     return super.canHoldItem(item, startSlot, quantity);
+  }
+
+  /**
+   * Confiscates all items from this inventory, storing them for later retrieval.
+   */
+  public async confiscate(): Promise<boolean> {
+    if (this.type !== 'player' || !this.playerId) return false;
+
+    const confiscatedId = `confiscated:${this.inventoryId}`;
+    const items = this.mapItems();
+
+    if (items.length === 0) return false;
+
+    // Create confiscated inventory with same dimensions
+    const confiscatedInv = new Inventory({
+      inventoryId: confiscatedId,
+      type: 'stash',
+      label: `Confiscated - ${this.label}`,
+      width: this.width,
+      height: this.height,
+      maxWeight: this.maxWeight,
+      ownerId: this.ownerId,
+    });
+
+    // Move all items to confiscated inventory
+    for (const item of items) {
+      item.move(confiscatedInv, confiscatedInv.findAvailableSlot(item));
+    }
+
+    this.confiscatedId = confiscatedId;
+    this.invalidateCache();
+    confiscatedInv.invalidateCache();
+
+    // Sync changes
+    this.emit('ox_inventory:clearInventory', { inventoryId: this.inventoryId });
+
+    console.log(`^3[ox_inventory] Confiscated inventory for ${this.label}^0`);
+    return true;
+  }
+
+  /**
+   * Returns previously confiscated items to this inventory.
+   */
+  public async returnConfiscated(): Promise<boolean> {
+    if (this.type !== 'player' || !this.playerId) return false;
+
+    const confiscatedId = `confiscated:${this.inventoryId}`;
+    const confiscatedInv = Inventory.FromId(confiscatedId);
+
+    if (!confiscatedInv) {
+      console.warn(`^3[ox_inventory] No confiscated inventory found for ${this.label}^0`);
+      return false;
+    }
+
+    const items = confiscatedInv.mapItems();
+
+    // Move all items back
+    for (const item of items) {
+      const slot = this.findAvailableSlot(item);
+      if (slot >= 0) {
+        item.move(this, slot);
+      } else {
+        // No space - drop on ground?
+        console.warn(`^3[ox_inventory] Could not return item ${item.name} - no space^0`);
+      }
+    }
+
+    // Remove confiscated inventory
+    confiscatedInv.remove(false);
+    delete this.confiscatedId;
+
+    this.invalidateCache();
+
+    console.log(`^3[ox_inventory] Returned confiscated inventory to ${this.label}^0`);
+    return true;
+  }
+
+  /**
+   * Checks if a player has access to this inventory based on group restrictions.
+   */
+  public hasAccess(playerGroups: Record<string, number>): boolean {
+    if (!this.groups) return true;
+
+    for (const [group, requiredGrade] of Object.entries(this.groups)) {
+      const playerGrade = playerGroups[group];
+      if (playerGrade !== undefined && playerGrade >= requiredGrade) {
+        return true;
+      }
+    }
+
+    return false;
+  }
+
+  /**
+   * Saves all inventories to the database.
+   * @param lock If true, prevents further inventory operations until unlocked.
+   */
+  static async SaveAllInventories(lock = false): Promise<void> {
+    console.log(`^3[ox_inventory] Saving all inventories${lock ? ' (locked)' : ''}^0`);
+
+    const inventories = Object.values(Inventory.instances as Record<string, Inventory>);
+    let savedCount = 0;
+
+    for (const inventory of inventories) {
+      try {
+        // Force cache invalidation to trigger save
+        inventory.invalidateCache();
+        savedCount++;
+      } catch (error) {
+        console.error(`^1[ox_inventory] Failed to save inventory ${inventory.inventoryId}:^0`, error);
+      }
+    }
+
+    console.log(`^2[ox_inventory] Saved ${savedCount} inventories^0`);
+
+    if (lock) {
+      // Set a global lock flag
+      (globalThis as any).__inventoryLocked = true;
+      console.log(`^3[ox_inventory] Inventory access locked until restart or save without lock^0`);
+    } else {
+      (globalThis as any).__inventoryLocked = false;
+    }
   }
 }

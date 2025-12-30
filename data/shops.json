@@ -1,0 +1,2465 @@
+{
+  "supermarket": {
+    "label": "Convenience Store",
+    "blip": { "id": 52, "colour": 2, "scale": 0.5 },
+    "models": ["u_m_y_proldriver_01", "a_f_m_prolhost_01"],
+    "items": [
+      {
+        "name": "water_bottle",
+        "price": 4,
+        "count": 50,
+        "category": "Beverage"
+      },
+      { "name": "sprunk", "price": 4, "count": 50, "category": "Beverage" },
+      {
+        "name": "sprunklight",
+        "price": 4,
+        "count": 50,
+        "category": "Beverage"
+      },
+      { "name": "ecola", "price": 4, "count": 50, "category": "Beverage" },
+      {
+        "name": "ecola_light",
+        "price": 4,
+        "count": 50,
+        "category": "Beverage"
+      },
+      {
+        "name": "snikkel_candy",
+        "price": 4,
+        "count": 50,
+        "category": "Snacks"
+      },
+      { "name": "twerks_candy", "price": 4, "count": 50, "category": "Snacks" },
+      { "name": "redw", "price": 50, "count": 100, "category": "Smoking" },
+      {
+        "name": "davidoffcigar",
+        "price": 10,
+        "count": 100,
+        "category": "Smoking"
+      },
+      { "name": "lighter", "price": 5, "count": 100, "category": "Smoking" }
+    ],
+    "locations": [
+      [24.53, -1346.49, 29.5, 269.8],
+      [-3039.68, 584.18, 7.91, 25.54],
+      [-3243.06, 999.84, 12.83, 355.6],
+      [1728.02, 6415.95, 35.04, 245.43],
+      [1699.68, 4922.95, 42.07, 11.44],
+      [1959.43, 3740.7, 32.34, 303.03],
+      [549.24, 2670.43, 42.16, 96.87],
+      [2677.24, 3279.75, 55.24, 331.6],
+      [2556.31, 380.66, 108.62, 358.22],
+      [372.62, 327.3, 103.57, 255.83],
+      [-46.8, -1756.53, 29.43, 98.1],
+      [-706.93, -912.45, 19.22, 134.25],
+      [-1821.55, 794.34, 138.12, 179.8],
+      [1163.51, -321.8, 69.21, 144.43],
+      [292.57, -1273.32, 29.42, 0.05],
+      [-2070.68, -334.05, 13.31, 353.35],
+      [-538.61, -1221.4, 18.46, 239.83],
+      [-2550.3, 2312.92, 33.23, 269.68],
+      [-1421.36, -271.14, 46.3, 44.25],
+      [170.06, -1547.53, 29.25, 138.04],
+      [644.72, 257.69, 103.3, 325.93],
+      [-345.66, -1473.96, 30.79, 181.86],
+      [-1037.49, -2762.01, 20.84, 60.71]
+    ],
+    "targets": []
+  },
+  "robsliquor": {
+    "label": "Rob's Liquor",
+    "blip": { "id": 827, "colour": 47, "scale": 0.5 },
+    "models": [
+      "cs_nervousron",
+      "IG_RussianDrunk",
+      "A_F_M_TrampBeac_01",
+      "A_M_M_Tramp_01",
+      "S_F_M_RetailStaff_01"
+    ],
+    "items": [
+      { "name": "beer", "price": 7, "count": 50, "category": "Drinks" },
+      { "name": "whiskey", "price": 7, "count": 50, "category": "Drinks" },
+      { "name": "vodka", "price": 7, "count": 50, "category": "Drinks" },
+      { "name": "wine", "price": 7, "count": 50, "category": "Drinks" },
+      { "name": "beer_ambeer", "price": 7, "count": 50, "category": "Drinks" },
+      { "name": "water_bottle", "price": 1, "count": 50, "category": "Drinks" }
+    ],
+    "locations": [
+      [-1221.38, -907.89, 12.33, 27.51],
+      [-1486.82, -377.48, 40.16, 130.89],
+      [-2966.41, 391.62, 15.04, 87.82],
+      [1165.15, 2710.78, 38.16, 177.96],
+      [1134.3, -983.26, 46.42, 276.3]
+    ],
+    "targets": []
+  },
+  "bartender": {
+    "label": "LSIA Bar",
+    "blip": { "id": 93, "colour": 5, "scale": 0.5 },
+    "models": [
+      "S_F_Y_ClubBar_01",
+      "A_F_Y_ClubCust_04",
+      "S_F_Y_ClubBar_02",
+      "IG_Sol",
+      "S_M_M_HighSec_04"
+    ],
+    "items": [
+      { "name": "beer", "price": 7, "count": 50, "category": "Drinks" },
+      { "name": "whiskey", "price": 7, "count": 50, "category": "Drinks" },
+      { "name": "vodka", "price": 7, "count": 50, "category": "Drinks" },
+      { "name": "wine", "price": 7, "count": 50, "category": "Drinks" },
+      { "name": "beer_ambeer", "price": 7, "count": 50, "category": "Drinks" },
+      { "name": "water_bottle", "price": 1, "count": 50, "category": "Drinks" }
+    ],
+    "locations": [[-1065.55, -2826.09, 26.12, 153.05]],
+    "targets": []
+  },
+  "hardware": {
+    "label": "Hardware Store",
+    "blip": { "id": 402, "colour": 5, "scale": 0.5 },
+    "models": [
+      "s_m_m_autoshop_02",
+      "S_F_M_Autoshop_01",
+      "S_M_M_AutoShop_01",
+      "S_M_M_Autoshop_03",
+      "IG_Benny",
+      "IG_Benny_02",
+      "MP_F_BennyMech_01"
+    ],
+    "items": [
+      { "name": "lockpick", "price": 75, "count": 50, "category": "Tools" },
+      {
+        "name": "advancedlockpick",
+        "price": 250,
+        "count": 50,
+        "category": "Tools"
+      },
+      { "name": "trowel", "price": 150, "count": 50, "category": "Tools" },
+      { "name": "pliers", "price": 150, "count": 10, "category": "Tools" },
+      { "name": "binoculars", "price": 150, "count": 10, "category": "Tools" },
+      {
+        "name": "screwdriverset",
+        "price": 500,
+        "count": 5,
+        "category": "Tools"
+      },
+      {
+        "name": "battery_package_aaa",
+        "price": 45,
+        "count": 30,
+        "category": "Tools"
+      },
+      {
+        "name": "tape_electrical",
+        "price": 45,
+        "count": 50,
+        "category": "Tools"
+      },
+      { "name": "wateringcan", "price": 75, "count": 300, "category": "Tools" },
+      {
+        "name": "WEAPON_SLEDGEHAMMER",
+        "price": 750,
+        "count": 10,
+        "category": "Tools"
+      },
+      {
+        "name": "WEAPON_WRENCH",
+        "price": 550,
+        "count": 10,
+        "category": "Tools"
+      },
+      {
+        "name": "WEAPON_CROWBAR",
+        "price": 250,
+        "count": 10,
+        "category": "Tools"
+      },
+      {
+        "name": "WEAPON_HAMMER",
+        "price": 250,
+        "count": 10,
+        "category": "Tools"
+      },
+      {
+        "name": "advancedrepairkit",
+        "price": 500,
+        "count": 1000,
+        "category": "Tools"
+      },
+      { "name": "spray", "price": 150, "count": 150, "category": "Tools" },
+      {
+        "name": "spray_remover",
+        "price": 150,
+        "count": 150,
+        "category": "Tools"
+      },
+      {
+        "name": "baggy_empty2",
+        "price": 1,
+        "count": 10000,
+        "category": "Storage"
+      },
+      { "name": "emptyjug", "price": 125, "count": 150, "category": "Storage" },
+      { "name": "tent", "price": 500, "count": 10, "category": "Leisure" },
+      { "name": "campfire", "price": 500, "count": 10, "category": "Leisure" },
+      { "name": "camptent", "price": 500, "count": 10, "category": "Leisure" },
+      {
+        "name": "foldingchair",
+        "price": 500,
+        "count": 10,
+        "category": "Leisure"
+      },
+      {
+        "name": "foldingtable",
+        "price": 500,
+        "count": 10,
+        "category": "Leisure"
+      },
+      {
+        "name": "picnictable",
+        "price": 500,
+        "count": 10,
+        "category": "Leisure"
+      },
+      { "name": "bbq", "price": 500, "count": 10, "category": "Leisure" },
+      { "name": "cooler", "price": 500, "count": 10, "category": "Leisure" },
+      {
+        "name": "weed_nutrition",
+        "price": 250,
+        "count": 300,
+        "category": "Misc"
+      },
+      {
+        "name": "sodiumbicarbonate",
+        "price": 125,
+        "count": 50,
+        "category": "Misc"
+      },
+      { "name": "chickenwire", "price": 126, "count": 50, "category": "Misc" }
+    ],
+    "locations": [
+      [55.83, -1794.19, 29.62, 319.56],
+      [2745.87, 3468.98, 55.67, 247.08],
+      [2669.76, 3377.74, 57.12, 247.69],
+      [-10.5, 6500.14, 31.5, 43.38]
+    ],
+    "targets": []
+  },
+  "ammunation": {
+    "label": "Ammunation",
+    "blip": { "id": 567, "colour": 1, "scale": 0.5 },
+    "models": [
+      "S_M_M_AmmuCountry",
+      "S_M_Y_AmmuCity_01",
+      "MP_M_WareMech_01",
+      "A_M_M_Farmer_01",
+      "MP_M_ExArmy_01",
+      "S_M_Y_ArmyMech_01",
+      "S_M_M_Armoured_02"
+    ],
+    "items": [
+      {
+        "name": "WEAPON_KNIFE",
+        "price": 150,
+        "count": 250,
+        "category": "Point Defense"
+      },
+      {
+        "name": "WEAPON_BAT",
+        "price": 75,
+        "count": 250,
+        "category": "Point Defense"
+      },
+      {
+        "name": "WEAPON_KNUCKLE",
+        "price": 500,
+        "count": 250,
+        "category": "Point Defense"
+      },
+      {
+        "name": "WEAPON_PISTOL",
+        "price": 2015,
+        "count": 5,
+        "license": "weapon",
+        "category": "Firearms",
+        "metadata": { "registered": true }
+      },
+      {
+        "name": "WEAPON_SNSPISTOL",
+        "price": 1865,
+        "count": 5,
+        "license": "weapon",
+        "category": "Firearms",
+        "metadata": { "registered": true }
+      },
+      {
+        "name": "WEAPON_HL9P",
+        "price": 3125,
+        "count": 5,
+        "license": "weapon",
+        "category": "Firearms",
+        "metadata": { "registered": true }
+      },
+      {
+        "name": "WEAPON_HL9S",
+        "price": 3125,
+        "count": 5,
+        "license": "weapon",
+        "category": "Firearms",
+        "metadata": { "registered": true }
+      },
+      {
+        "name": "WEAPON_HLG4",
+        "price": 3300,
+        "count": 5,
+        "license": "weapon",
+        "category": "Firearms",
+        "metadata": { "registered": true }
+      },
+      {
+        "name": "ammo-9",
+        "price": 10,
+        "count": 9500,
+        "license": "weapon",
+        "category": "Ammunition"
+      },
+      {
+        "name": "ammo-45",
+        "price": 24,
+        "count": 5500,
+        "license": "weapon",
+        "category": "Ammunition"
+      },
+      {
+        "name": "ammo-sniper",
+        "price": 38,
+        "count": 5500,
+        "license": "weapon",
+        "category": "Ammunition"
+      },
+      {
+        "name": "lightpc",
+        "price": 2500,
+        "count": 10,
+        "license": "weapon",
+        "category": "Armor"
+      },
+      {
+        "name": "lightplate",
+        "price": 100,
+        "count": 50,
+        "license": "weapon",
+        "category": "Armor"
+      }
+    ],
+    "locations": [
+      [808.94, -2158.99, 29.62, 330.26],
+      [-660.98, -933.6, 21.83, 154.74],
+      [253.41, -51.67, 69.94, 28.88],
+      [23.69, -1105.95, 29.8, 124.58],
+      [2566.81, 292.54, 108.73, 320.09],
+      [-1118.19, 2700.5, 18.55, 185.31],
+      [841.31, -1035.28, 28.19, 334.27],
+      [-1304.44, -395.68, 36.7, 41.85]
+    ],
+    "targets": []
+  },
+  "digitalden": {
+    "label": "Digital Den",
+    "blip": { "id": 606, "colour": 7, "scale": 0.5 },
+    "models": ["IG_LifeInvad_01", "IG_LifeInvad_02", "CS_LifeInvad_01"],
+    "items": [
+      {
+        "name": "yphone_natural",
+        "price": 1200,
+        "count": 20,
+        "category": "yPhones"
+      },
+      {
+        "name": "yphone_black",
+        "price": 1200,
+        "count": 20,
+        "category": "yPhones"
+      },
+      {
+        "name": "yphone_white",
+        "price": 1200,
+        "count": 20,
+        "category": "yPhones"
+      },
+      {
+        "name": "yphone_blue",
+        "price": 1200,
+        "count": 20,
+        "category": "yPhones"
+      },
+      {
+        "name": "yphone_fold_black",
+        "price": 1200,
+        "count": 20,
+        "category": "yPhones"
+      },
+      { "name": "yflip_mint", "price": 1200, "count": 20, "category": "yFlip" },
+      { "name": "yflip_gold", "price": 1200, "count": 20, "category": "yFlip" },
+      {
+        "name": "yflip_graphite",
+        "price": 1200,
+        "count": 20,
+        "category": "yFlip"
+      },
+      {
+        "name": "yflip_lavender",
+        "price": 1200,
+        "count": 20,
+        "category": "yFlip"
+      },
+      { "name": "y24_black", "price": 1200, "count": 20, "category": "y24" },
+      { "name": "y24_silver", "price": 1200, "count": 20, "category": "y24" },
+      { "name": "y24_violet", "price": 1200, "count": 20, "category": "y24" },
+      { "name": "y24_yellow", "price": 1200, "count": 20, "category": "y24" },
+      {
+        "name": "yfold_black",
+        "price": 1200,
+        "count": 20,
+        "category": "yFold"
+      },
+      {
+        "name": "ys_sim_card",
+        "price": 30,
+        "count": 30,
+        "category": "Sim Card"
+      },
+      { "name": "boombox", "price": 500, "count": 10, "category": "Leisure" },
+      { "name": "miniradio", "price": 500, "count": 10, "category": "Leisure" },
+      { "name": "laptop4", "price": 1000, "count": 10, "category": "Laptop" }
+    ],
+    "locations": [
+      [63.3, -1804.64, 29.63, 47.83],
+      [2661.78, 3367.64, 57.13, 340.32],
+      [54.51, -1592.87, 29.59, 143.08]
+    ],
+    "targets": []
+  },
+  "policearmory": {
+    "label": "Police Armory",
+    "groups": { "lspd": 1, "bcso": 1, "sasp": 0, "dhs": 1 },
+    "items": [
+      { "name": "WEAPON_NIGHTSTICK", "price": 0, "category": "Misc" },
+      { "name": "WEAPON_FLASHLIGHT", "price": 0, "category": "Misc" },
+      { "name": "WEAPON_FIREEXTINGUISHER", "price": 0, "category": "Misc" },
+      { "name": "WEAPON_FLARE", "price": 0, "category": "Misc" },
+      { "name": "handcuffs", "price": 0, "category": "Misc" },
+      { "name": "radio", "price": 0, "category": "Misc" },
+      { "name": "cone", "price": 0, "category": "Misc" },
+      { "name": "barricade", "price": 0, "category": "Misc" },
+      { "name": "spikestrip", "price": 0, "category": "Misc" },
+      { "name": "empty_evidence_bag", "price": 0, "category": "Misc" },
+      { "name": "nikon", "price": 0, "category": "Misc" },
+      { "name": "sdcard", "price": 0, "category": "Misc" },
+      { "name": "gsrtestkit", "price": 0, "category": "Misc" },
+      { "name": "dnatestkit", "price": 0, "category": "Misc" },
+      { "name": "drugtestkit", "price": 0, "category": "Misc" },
+      { "name": "breathalyzer", "price": 0, "category": "Misc" },
+      { "name": "fingerprintreader", "price": 0, "category": "Misc" },
+      { "name": "accesstool", "price": 0, "category": "Misc" },
+      { "name": "fingerprintkit", "price": 0, "category": "Misc" },
+      { "name": "mikrosil", "price": 0, "category": "Misc" },
+      { "name": "fingerprinttape", "price": 0, "category": "Misc" },
+      { "name": "advancedrepairkit", "price": 0, "category": "Misc" },
+      {
+        "name": "lightpc",
+        "price": 0,
+        "count": 50,
+        "category": "Armor",
+        "jobs": { "bcso": 0, "lspd": 1, "sasp": 1 }
+      },
+      {
+        "name": "lightplate",
+        "price": 0,
+        "count": 5000,
+        "category": "Armor",
+        "jobs": { "bcso": 0, "lspd": 1, "sasp": 1 }
+      },
+      {
+        "name": "heavypc",
+        "price": 0,
+        "count": 50,
+        "category": "Armor",
+        "jobs": { "bcso": 8, "lspd": 8, "sasp": 1 }
+      },
+      {
+        "name": "heavyplate",
+        "price": 0,
+        "count": 5000,
+        "category": "Armor",
+        "jobs": { "bcso": 8, "lspd": 8, "sasp": 1 }
+      },
+      {
+        "name": "WEAPON_HL9P",
+        "price": 0,
+        "category": "Patrol Weapons",
+        "jobs": { "bcso": 10, "lspd": 9, "sasp": 1 },
+        "metadata": { "registered": true, "serial": "POL" }
+      },
+      {
+        "name": "WEAPON_HL9S",
+        "price": 0,
+        "category": "Patrol Weapons",
+        "jobs": { "bcso": 10, "lspd": 9, "sasp": 1 },
+        "metadata": { "registered": true, "serial": "POL" }
+      },
+      {
+        "name": "WEAPON_SM1C",
+        "price": 0,
+        "category": "Patrol Weapons",
+        "jobs": { "bcso": 10, "lspd": 9, "sasp": 1 },
+        "metadata": { "registered": true, "serial": "POL" }
+      },
+      {
+        "name": "WEAPON_HL10M",
+        "price": 0,
+        "category": "Patrol Weapons",
+        "jobs": { "bcso": 10, "lspd": 9, "sasp": 1 },
+        "metadata": { "registered": true, "serial": "POL" }
+      },
+      {
+        "name": "WEAPON_HLG4",
+        "price": 0,
+        "category": "Patrol Weapons",
+        "jobs": { "bcso": 10, "lspd": 9, "sasp": 1 },
+        "metadata": { "registered": true, "serial": "POL" }
+      },
+      {
+        "name": "WEAPON_SHP9",
+        "price": 0,
+        "category": "Patrol Weapons",
+        "jobs": { "bcso": 10, "lspd": 9, "sasp": 1 },
+        "metadata": { "registered": true, "serial": "POL" }
+      },
+      {
+        "name": "WEAPON_STUNGUN",
+        "price": 0,
+        "category": "Patrol Weapons",
+        "metadata": { "registered": true, "serial": "POL" }
+      },
+      {
+        "name": "WEAPON_HL45T",
+        "price": 0,
+        "category": "Patrol Weapons",
+        "jobs": { "bcso": 10, "lspd": 9, "sasp": 1 },
+        "metadata": { "registered": true, "serial": "POL" }
+      },
+      {
+        "name": "WEAPON_VFX6C",
+        "price": 0,
+        "category": "Patrol Weapons",
+        "jobs": { "bcso": 10, "lspd": 9, "sasp": 1 },
+        "metadata": { "registered": true, "serial": "POL" }
+      },
+      {
+        "name": "WEAPON_SR4",
+        "price": 0,
+        "category": "Patrol Weapons",
+        "jobs": { "bcso": 10, "lspd": 9, "sasp": 1 },
+        "metadata": { "registered": true, "serial": "POL" }
+      },
+      {
+        "name": "WEAPON_VFPMX",
+        "price": 0,
+        "category": "SWAT Weapons",
+        "jobs": { "bcso": 10, "lspd": 9, "sasp": 1 },
+        "metadata": { "registered": true, "serial": "POL" }
+      },
+      {
+        "name": "WEAPON_PUMPSHOTGUN",
+        "price": 0,
+        "category": "SWAT Weapons",
+        "jobs": { "bcso": 10, "lspd": 9, "sasp": 1 },
+        "metadata": { "registered": true, "serial": "POL" }
+      },
+      {
+        "name": "WEAPON_LESSLETHAL",
+        "price": 0,
+        "category": "SWAT Weapons",
+        "jobs": { "bcso": 1, "lspd": 1, "sasp": 1 },
+        "metadata": { "registered": true, "serial": "POL" }
+      },
+      { "name": "ammo-9", "price": 0, "category": "Ammunition" },
+      { "name": "ammo-45", "price": 0, "category": "Ammunition" },
+      { "name": "ammo-rifle", "price": 0, "category": "Ammunition" },
+      { "name": "ammo-rifle2", "price": 0, "category": "Ammunition" },
+      { "name": "ammo-shotgun", "price": 0, "category": "Ammunition" },
+      { "name": "ammo-sniper", "price": 0, "category": "Ammunition" },
+      { "name": "ammo-lesslethal", "price": 0, "category": "Ammunition" },
+      {
+        "name": "WEAPON_DD11_B",
+        "price": 0,
+        "category": "SWAT Weapons",
+        "jobs": { "bcso": 10, "lspd": 9, "sasp": 1 },
+        "metadata": { "registered": true, "serial": "POL" }
+      },
+      {
+        "name": "WEAPON_DD14_B",
+        "price": 0,
+        "category": "SWAT Weapons",
+        "jobs": { "bcso": 10, "lspd": 9, "sasp": 1 },
+        "metadata": { "registered": true, "serial": "POL" }
+      },
+      {
+        "name": "at_scope_ddm4_b",
+        "price": 0,
+        "category": "SWAT Attachments",
+        "jobs": { "bcso": 10, "lspd": 9, "sasp": 1 }
+      },
+      {
+        "name": "at_scope_ddm4_holo_b",
+        "price": 0,
+        "category": "SWAT Attachments",
+        "jobs": { "bcso": 10, "lspd": 9, "sasp": 1 }
+      },
+      {
+        "name": "at_scope_ddm4_hhsvo_b",
+        "price": 0,
+        "category": "SWAT Attachments",
+        "jobs": { "bcso": 10, "lspd": 9, "sasp": 1 }
+      },
+      {
+        "name": "at_scope_ddm4_hhsvc_b",
+        "price": 0,
+        "category": "SWAT Attachments",
+        "jobs": { "bcso": 10, "lspd": 9, "sasp": 1 }
+      },
+      {
+        "name": "at_clip_pmag30_b",
+        "price": 0,
+        "category": "SWAT Attachments",
+        "jobs": { "bcso": 10, "lspd": 9, "sasp": 1 }
+      },
+      {
+        "name": "at_clip_pmag40_b",
+        "price": 0,
+        "category": "SWAT Attachments",
+        "jobs": { "bcso": 10, "lspd": 9, "sasp": 1 }
+      },
+      {
+        "name": "at_clip_pmag30r_b",
+        "price": 0,
+        "category": "SWAT Attachments",
+        "jobs": { "bcso": 10, "lspd": 9, "sasp": 1 }
+      },
+      {
+        "name": "at_sfs11_b",
+        "price": 0,
+        "category": "SWAT Attachments",
+        "jobs": { "bcso": 10, "lspd": 9, "sasp": 1 }
+      },
+      {
+        "name": "at_sfs14_b",
+        "price": 0,
+        "category": "SWAT Attachments",
+        "jobs": { "bcso": 10, "lspd": 9, "sasp": 1 }
+      },
+      {
+        "name": "at_peq11_b",
+        "price": 0,
+        "category": "SWAT Attachments",
+        "jobs": { "bcso": 10, "lspd": 9, "sasp": 1 }
+      },
+      {
+        "name": "at_peq14_b",
+        "price": 0,
+        "category": "SWAT Attachments",
+        "jobs": { "bcso": 10, "lspd": 9, "sasp": 1 }
+      },
+      {
+        "name": "at_grip_bcm_b",
+        "price": 0,
+        "category": "SWAT Attachments",
+        "jobs": { "bcso": 10, "lspd": 9, "sasp": 1 }
+      }
+    ],
+    "locations": [
+      [-450.13, 7100.79, 22.38, 22.39],
+      [2807.77, 4729.93, 47.89, 7.11],
+      [-1034.86, -822.29, 10.95, 228.89],
+      [-1035.9, -813.46, 10.95, 21.19],
+      [1833.8, 3696.35, 34.71, 27.98],
+      [1821.02, 3665.92, 30.31, 210.62],
+      [458.05, -996.13, 29.71, 288.18],
+      [452.03, -995.79, 29.71, 92.92]
+    ],
+    "targets": []
+  },
+  "dhsarmory": {
+    "label": "DHS Armory",
+    "groups": { "dhs": 0 },
+    "items": [
+      {
+        "name": "WEAPON_DD11_B",
+        "price": 0,
+        "category": "DHS Rifles",
+        "jobs": { "dhs": 4 },
+        "metadata": { "serial": "DHS" }
+      },
+      {
+        "name": "WEAPON_DD14_B",
+        "price": 0,
+        "category": "DHS Rifles",
+        "jobs": { "dhs": 4 },
+        "metadata": { "serial": "DHS" }
+      },
+      {
+        "name": "WEAPON_DD16_B",
+        "price": 0,
+        "category": "DHS Rifles",
+        "jobs": { "dhs": 4 },
+        "metadata": { "serial": "DHS" }
+      },
+      {
+        "name": "WEAPON_DD11_C",
+        "price": 0,
+        "category": "DHS Rifles",
+        "jobs": { "dhs": 4 },
+        "metadata": { "serial": "DHS" }
+      },
+      {
+        "name": "WEAPON_DD14_C",
+        "price": 0,
+        "category": "DHS Rifles",
+        "jobs": { "dhs": 4 },
+        "metadata": { "serial": "DHS" }
+      },
+      {
+        "name": "WEAPON_DD16_C",
+        "price": 0,
+        "category": "DHS Rifles",
+        "jobs": { "dhs": 4 },
+        "metadata": { "serial": "DHS" }
+      },
+      {
+        "name": "WEAPON_DD11_OD",
+        "price": 0,
+        "category": "DHS Rifles",
+        "jobs": { "dhs": 4 },
+        "metadata": { "serial": "DHS" }
+      },
+      {
+        "name": "WEAPON_DD14_OD",
+        "price": 0,
+        "category": "DHS Rifles",
+        "jobs": { "dhs": 4 },
+        "metadata": { "serial": "DHS" }
+      },
+      {
+        "name": "WEAPON_DD16_OD",
+        "price": 0,
+        "category": "DHS Rifles",
+        "jobs": { "dhs": 4 },
+        "metadata": { "serial": "DHS" }
+      },
+      { "name": "ammo-9", "price": 0, "category": "Ammunition" },
+      { "name": "ammo-rifle", "price": 0, "category": "Ammunition" },
+      {
+        "name": "at_scope_ddm4_b",
+        "price": 0,
+        "category": "TDM4V7 Attachments"
+      },
+      {
+        "name": "at_scope_ddm4_cw",
+        "price": 0,
+        "category": "TDM4V7 Attachments"
+      },
+      {
+        "name": "at_scope_ddm4_odw",
+        "price": 0,
+        "category": "TDM4V7 Attachments"
+      },
+      {
+        "name": "at_scope_ddm4_holo_b",
+        "price": 0,
+        "category": "TDM4V7 Attachments"
+      },
+      {
+        "name": "at_scope_ddm4_holo_c",
+        "price": 0,
+        "category": "TDM4V7 Attachments"
+      },
+      {
+        "name": "at_scope_ddm4_hhsvo_b",
+        "price": 0,
+        "category": "TDM4V7 Attachments"
+      },
+      {
+        "name": "at_scope_ddm4_hhsvo_c",
+        "price": 0,
+        "category": "TDM4V7 Attachments"
+      },
+      {
+        "name": "at_scope_ddm4_hhsvc_b",
+        "price": 0,
+        "category": "TDM4V7 Attachments"
+      },
+      {
+        "name": "at_scope_ddm4_hhsvc_c",
+        "price": 0,
+        "category": "TDM4V7 Attachments"
+      },
+      {
+        "name": "at_scope_ddm4_vudu",
+        "price": 0,
+        "category": "TDM4V7 Attachments"
+      },
+      {
+        "name": "at_clip_pmag30_b",
+        "price": 0,
+        "category": "TDM4V7 Attachments"
+      },
+      {
+        "name": "at_clip_pmag30_c",
+        "price": 0,
+        "category": "TDM4V7 Attachments"
+      },
+      {
+        "name": "at_clip_pmag40_b",
+        "price": 0,
+        "category": "TDM4V7 Attachments"
+      },
+      {
+        "name": "at_clip_pmag30r_b",
+        "price": 0,
+        "category": "TDM4V7 Attachments"
+      },
+      {
+        "name": "at_clip_pmag60rm_b",
+        "price": 0,
+        "category": "TDM4V7 Attachments"
+      },
+      {
+        "name": "at_clip_pmag60rm_c",
+        "price": 0,
+        "category": "TDM4V7 Attachments"
+      },
+      { "name": "at_sfs11_b", "price": 0, "category": "TDM4V7 Attachments" },
+      { "name": "at_peq11_b", "price": 0, "category": "TDM4V7 Attachments" },
+      { "name": "at_peq11_c", "price": 0, "category": "TDM4V7 Attachments" },
+      {
+        "name": "at_suppressor_11_b",
+        "price": 0,
+        "category": "TDM4V7 Attachments"
+      },
+      { "name": "at_sfs14_b", "price": 0, "category": "TDM4V7 Attachments" },
+      { "name": "at_peq14_b", "price": 0, "category": "TDM4V7 Attachments" },
+      { "name": "at_peq14_c", "price": 0, "category": "TDM4V7 Attachments" },
+      {
+        "name": "at_suppressor_14_b",
+        "price": 0,
+        "category": "TDM4V7 Attachments"
+      },
+      { "name": "at_sfs16_b", "price": 0, "category": "TDM4V7 Attachments" },
+      { "name": "at_peq16_b", "price": 0, "category": "TDM4V7 Attachments" },
+      { "name": "at_peq16_c", "price": 0, "category": "TDM4V7 Attachments" },
+      {
+        "name": "at_suppressor_16_b",
+        "price": 0,
+        "category": "TDM4V7 Attachments"
+      },
+      { "name": "at_grip_bcm_b", "price": 0, "category": "TDM4V7 Attachments" },
+      { "name": "at_grip_bcm_c", "price": 0, "category": "TDM4V7 Attachments" },
+      {
+        "name": "at_grip_bcm_od",
+        "price": 0,
+        "category": "TDM4V7 Attachments"
+      },
+      {
+        "name": "lightpc",
+        "price": 0,
+        "count": 50,
+        "category": "Armor",
+        "jobs": { "dhs": 1 }
+      },
+      {
+        "name": "lightplate",
+        "price": 0,
+        "count": 5000,
+        "category": "Armor",
+        "jobs": { "dhs": 1 }
+      },
+      {
+        "name": "heavypc",
+        "price": 0,
+        "count": 50,
+        "category": "Armor",
+        "jobs": { "dhs": 1 }
+      },
+      {
+        "name": "heavyplate",
+        "price": 0,
+        "count": 5000,
+        "category": "Armor",
+        "jobs": { "dhs": 1 }
+      }
+    ],
+    "locations": [[-815.57, -722.28, 23.05, 0.0]],
+    "targets": []
+  },
+  "beanmachine": {
+    "label": "Bean Machine",
+    "blip": { "id": 106, "colour": 16, "scale": 0.5 },
+    "models": ["A_M_Y_BeachVesp_02"],
+    "items": [
+      {
+        "name": "bean_carmalcoffee",
+        "price": 7,
+        "count": 50,
+        "category": "Drinks"
+      },
+      { "name": "bean_coffee1", "price": 7, "count": 50, "category": "Drinks" },
+      {
+        "name": "bean_pumpkinlate",
+        "price": 7,
+        "count": 50,
+        "category": "Drinks"
+      },
+      {
+        "name": "bean_hotchocolate",
+        "price": 7,
+        "count": 50,
+        "category": "Drinks"
+      }
+    ],
+    "locations": [[-220.91, -1312.98, 31.63, 178.27]],
+    "targets": []
+  },
+  "grocery": {
+    "label": "Grocery",
+    "blip": { "id": 52, "colour": 14, "scale": 0.5 },
+    "models": [
+      "S_M_Y_BusBoy_01",
+      "A_M_Y_Business_02",
+      "A_F_Y_Business_04",
+      "MP_F_CarDesign_01",
+      "U_F_Y_Princess",
+      "A_M_M_BevHills_02",
+      "CSB_Sol",
+      "IG_ARY_02"
+    ],
+    "items": [
+      {
+        "name": "bag_shredmozz",
+        "price": 6,
+        "count": 100,
+        "category": "Dairy"
+      },
+      {
+        "name": "bag_shredched",
+        "price": 4,
+        "count": 100,
+        "category": "Dairy"
+      },
+      { "name": "box_butter", "price": 3, "count": 100, "category": "Dairy" },
+      {
+        "name": "gallon_chocmilk",
+        "price": 4,
+        "count": 100,
+        "category": "Dairy"
+      },
+      { "name": "gallon_milk", "price": 4, "count": 100, "category": "Dairy" },
+      { "name": "dchocbar", "price": 6, "count": 100, "category": "Dairy" },
+      { "name": "mchocbar", "price": 5, "count": 100, "category": "Dairy" },
+      { "name": "wchocbar", "price": 5, "count": 100, "category": "Dairy" },
+      {
+        "name": "pack_slicedprov",
+        "price": 5,
+        "count": 100,
+        "category": "Dairy"
+      },
+      {
+        "name": "pack_slicedched",
+        "price": 4,
+        "count": 100,
+        "category": "Dairy"
+      },
+      {
+        "name": "pack_slicedswiss",
+        "price": 5,
+        "count": 100,
+        "category": "Dairy"
+      },
+      {
+        "name": "pack_slicedamer",
+        "price": 3,
+        "count": 100,
+        "category": "Dairy"
+      },
+      { "name": "crate_apple", "price": 7, "count": 100, "category": "Fruits" },
+      {
+        "name": "crate_avocado",
+        "price": 12,
+        "count": 100,
+        "category": "Fruits"
+      },
+      { "name": "crate_lemon", "price": 6, "count": 100, "category": "Fruits" },
+      { "name": "crate_lime", "price": 5, "count": 100, "category": "Fruits" },
+      {
+        "name": "crate_orange",
+        "price": 7,
+        "count": 100,
+        "category": "Fruits"
+      },
+      { "name": "crate_peach", "price": 8, "count": 100, "category": "Fruits" },
+      {
+        "name": "crate_pineapple",
+        "price": 10,
+        "count": 100,
+        "category": "Fruits"
+      },
+      {
+        "name": "pack_blackberry",
+        "price": 6,
+        "count": 100,
+        "category": "Fruits"
+      },
+      {
+        "name": "pack_blueberry",
+        "price": 5,
+        "count": 100,
+        "category": "Fruits"
+      },
+      { "name": "pack_cherry", "price": 7, "count": 100, "category": "Fruits" },
+      {
+        "name": "pack_raspberry",
+        "price": 6,
+        "count": 100,
+        "category": "Fruits"
+      },
+      {
+        "name": "pack_strawberry",
+        "price": 5,
+        "count": 100,
+        "category": "Fruits"
+      },
+      {
+        "name": "whole_watermelon",
+        "price": 4,
+        "count": 100,
+        "category": "Fruits"
+      },
+      { "name": "bag_ramen", "price": 9, "count": 100, "category": "Grains" },
+      {
+        "name": "bag_tortchips",
+        "price": 3,
+        "count": 100,
+        "category": "Grains"
+      },
+      { "name": "box_cones", "price": 7, "count": 100, "category": "Grains" },
+      { "name": "sack_rice", "price": 10, "count": 100, "category": "Grains" },
+      { "name": "sack_flour", "price": 9, "count": 100, "category": "Grains" },
+      { "name": "sack_sugar", "price": 8, "count": 100, "category": "Grains" },
+      { "name": "pack_yeast", "price": 1, "count": 100, "category": "Grains" },
+      {
+        "name": "pack_hambuns",
+        "price": 5,
+        "count": 100,
+        "category": "Grains"
+      },
+      {
+        "name": "pack_hotbuns",
+        "price": 4,
+        "count": 100,
+        "category": "Grains"
+      },
+      { "name": "pack_pita", "price": 6, "count": 100, "category": "Grains" },
+      {
+        "name": "pack_dumplings",
+        "price": 6,
+        "count": 100,
+        "category": "Grains"
+      },
+      {
+        "name": "pack_slicedbread",
+        "price": 5,
+        "count": 100,
+        "category": "Grains"
+      },
+      {
+        "name": "pack_tortillas",
+        "price": 7,
+        "count": 100,
+        "category": "Grains"
+      },
+      { "name": "tub_boba", "price": 9, "count": 100, "category": "Grains" },
+      { "name": "breadloaf", "price": 4, "count": 100, "category": "Grains" },
+      {
+        "name": "bunch_cilantro",
+        "price": 6,
+        "count": 100,
+        "category": "Herbs, Spices, Oils"
+      },
+      {
+        "name": "bunch_mint",
+        "price": 8,
+        "count": 100,
+        "category": "Herbs, Spices, Oils"
+      },
+      {
+        "name": "bag_nuggets",
+        "price": 7,
+        "count": 100,
+        "category": "Meat, Poultry, Fish"
+      },
+      {
+        "name": "bag_pepperoni",
+        "price": 4,
+        "count": 100,
+        "category": "Meat, Poultry, Fish"
+      },
+      {
+        "name": "pack_frozenhamburgpatty",
+        "price": 14,
+        "count": 100,
+        "category": "Meat, Poultry, Fish"
+      },
+      {
+        "name": "pack_groundbeef",
+        "price": 6,
+        "count": 100,
+        "category": "Meat, Poultry, Fish"
+      },
+      {
+        "name": "pack_rawchickenbreast",
+        "price": 7,
+        "count": 100,
+        "category": "Meat, Poultry, Fish"
+      },
+      {
+        "name": "pack_rawduckbreast",
+        "price": 9,
+        "count": 100,
+        "category": "Meat, Poultry, Fish"
+      },
+      {
+        "name": "pack_rawchickendrum",
+        "price": 5,
+        "count": 100,
+        "category": "Meat, Poultry, Fish"
+      },
+      {
+        "name": "pack_rawhotdog",
+        "price": 11,
+        "count": 100,
+        "category": "Meat, Poultry, Fish"
+      },
+      {
+        "name": "pack_rawbacon",
+        "price": 8,
+        "count": 100,
+        "category": "Meat, Poultry, Fish"
+      },
+      {
+        "name": "pack_rawsausage",
+        "price": 6,
+        "count": 100,
+        "category": "Meat, Poultry, Fish"
+      },
+      {
+        "name": "rawflanksteak",
+        "price": 7,
+        "count": 100,
+        "category": "Meat, Poultry, Fish"
+      },
+      {
+        "name": "pack_rawcod",
+        "price": 10,
+        "count": 100,
+        "category": "Meat, Poultry, Fish"
+      },
+      {
+        "name": "cartonegg",
+        "price": 10,
+        "count": 100,
+        "category": "Meat, Poultry, Fish"
+      },
+      {
+        "name": "jar_matcha",
+        "price": 11,
+        "count": 100,
+        "category": "Miscellaneous"
+      },
+      {
+        "name": "pack_nori",
+        "price": 8,
+        "count": 100,
+        "category": "Miscellaneous"
+      },
+      {
+        "name": "box_fish_dress",
+        "price": 10,
+        "count": 100,
+        "category": "Miscellaneous"
+      },
+      {
+        "name": "crate_redbellpep",
+        "price": 10,
+        "count": 100,
+        "category": "Vegetables"
+      },
+      {
+        "name": "crate_greenbellpep",
+        "price": 11,
+        "count": 100,
+        "category": "Vegetables"
+      },
+      {
+        "name": "crate_potato",
+        "price": 10,
+        "count": 100,
+        "category": "Vegetables"
+      },
+      {
+        "name": "crate_tomato",
+        "price": 5,
+        "count": 100,
+        "category": "Vegetables"
+      },
+      {
+        "name": "crate_cucumber",
+        "price": 8,
+        "count": 100,
+        "category": "Vegetables"
+      },
+      {
+        "name": "crate_onion",
+        "price": 11,
+        "count": 100,
+        "category": "Vegetables"
+      },
+      {
+        "name": "crate_redonion",
+        "price": 9,
+        "count": 100,
+        "category": "Vegetables"
+      },
+      {
+        "name": "pack_tofu",
+        "price": 5,
+        "count": 100,
+        "category": "Vegetables"
+      },
+      {
+        "name": "jar_pickle",
+        "price": 7,
+        "count": 100,
+        "category": "Vegetables"
+      },
+      {
+        "name": "head_cabbage",
+        "price": 6,
+        "count": 100,
+        "category": "Vegetables"
+      },
+      {
+        "name": "bundle_chilipep",
+        "price": 5,
+        "count": 100,
+        "category": "Vegetables"
+      },
+      {
+        "name": "head_lettuce",
+        "price": 7,
+        "count": 100,
+        "category": "Vegetables"
+      },
+      {
+        "name": "bundle_greenonion",
+        "price": 8,
+        "count": 100,
+        "category": "Vegetables"
+      },
+      {
+        "name": "bundle_carrot",
+        "price": 5,
+        "count": 100,
+        "category": "Vegetables"
+      },
+      {
+        "name": "whole_garlic",
+        "price": 4,
+        "count": 100,
+        "category": "Vegetables"
+      },
+      {
+        "name": "pack_mushroom",
+        "price": 4,
+        "count": 100,
+        "category": "Vegetables"
+      }
+    ],
+    "locations": [
+      [2688.62, 3386.41, 57.12, 252.89],
+      [2705.88, 3378.81, 57.12, 65.24],
+      [64.69, -1759.12, 29.62, 132.19],
+      [52.58, -1773.58, 29.62, 319.13]
+    ],
+    "targets": []
+  },
+  "lscustommechanicshop": {
+    "label": "LS Custom Mechanic Shop",
+    "groups": { "lscustom": 0 },
+    "items": [
+      { "name": "paintcan", "price": 0, "count": 250, "category": "Cosmetic" },
+      { "name": "hood", "price": 0, "count": 75, "category": "Cosmetic" },
+      { "name": "roof", "price": 0, "count": 75, "category": "Cosmetic" },
+      { "name": "spoiler", "price": 0, "count": 75, "category": "Cosmetic" },
+      { "name": "bumper", "price": 0, "count": 75, "category": "Cosmetic" },
+      { "name": "skirts", "price": 0, "count": 75, "category": "Cosmetic" },
+      { "name": "exhaust", "price": 0, "count": 75, "category": "Cosmetic" },
+      { "name": "seat", "price": 0, "count": 75, "category": "Cosmetic" },
+      { "name": "livery", "price": 0, "count": 75, "category": "Cosmetic" },
+      { "name": "tires", "price": 0, "count": 75, "category": "Cosmetic" },
+      { "name": "horn", "price": 0, "count": 50, "category": "Cosmetic" },
+      { "name": "internals", "price": 0, "count": 50, "category": "Cosmetic" },
+      { "name": "externals", "price": 0, "count": 50, "category": "Cosmetic" },
+      {
+        "name": "customplate",
+        "price": 0,
+        "count": 50,
+        "category": "Cosmetic"
+      },
+      { "name": "headlights", "price": 0, "count": 50, "category": "Cosmetic" },
+      { "name": "rims", "price": 0, "count": 75, "category": "Cosmetic" },
+      { "name": "rollcage", "price": 0, "count": 75, "category": "Cosmetic" },
+      { "name": "underglow", "price": 0, "count": 75, "category": "Cosmetic" },
+      { "name": "stancerkit", "price": 0, "count": 75, "category": "Cosmetic" },
+      {
+        "name": "tint_supplies",
+        "price": 0,
+        "count": 75,
+        "category": "Cosmetic"
+      },
+      {
+        "name": "mechanic_tools",
+        "price": 0,
+        "count": 15,
+        "category": "Mech Tools"
+      },
+      {
+        "name": "underglow_controller",
+        "price": 0,
+        "count": 25,
+        "category": "Mech Tools"
+      },
+      { "name": "toolbox", "price": 0, "count": 15, "category": "Mech Tools" },
+      {
+        "name": "ducttape",
+        "price": 0,
+        "count": 50,
+        "category": "Tools/Equipment"
+      },
+      {
+        "name": "newoil",
+        "price": 0,
+        "count": 75,
+        "category": "Tools/Equipment"
+      },
+      {
+        "name": "cleaningkit",
+        "price": 0,
+        "count": 50,
+        "category": "Tools/Equipment"
+      },
+      {
+        "name": "repairkit",
+        "price": 0,
+        "count": 50,
+        "category": "Tools/Equipment"
+      },
+      {
+        "name": "advancedrepairkit",
+        "price": 0,
+        "count": 50,
+        "category": "Tools/Equipment"
+      },
+      {
+        "name": "noscolour",
+        "price": 0,
+        "count": 50,
+        "category": "Tools/Equipment"
+      }
+    ],
+    "locations": [
+      [-337.67, -133.61, 39.15, 0.0],
+      [-315.89, -139.29, 39.09, 0.0],
+      [-318.38, -151.74, 39.09, 0.0]
+    ],
+    "targets": []
+  },
+  "bennysmechanicshop": {
+    "label": "Benny's Mechanic Shop",
+    "groups": { "bennys": 0 },
+    "items": [
+      { "name": "paintcan", "price": 0, "count": 250, "category": "Cosmetic" },
+      { "name": "hood", "price": 0, "count": 75, "category": "Cosmetic" },
+      { "name": "roof", "price": 0, "count": 75, "category": "Cosmetic" },
+      { "name": "spoiler", "price": 0, "count": 75, "category": "Cosmetic" },
+      { "name": "bumper", "price": 0, "count": 75, "category": "Cosmetic" },
+      { "name": "skirts", "price": 0, "count": 75, "category": "Cosmetic" },
+      { "name": "exhaust", "price": 0, "count": 75, "category": "Cosmetic" },
+      { "name": "seat", "price": 0, "count": 75, "category": "Cosmetic" },
+      { "name": "livery", "price": 0, "count": 75, "category": "Cosmetic" },
+      { "name": "tires", "price": 0, "count": 75, "category": "Cosmetic" },
+      { "name": "horn", "price": 0, "count": 50, "category": "Cosmetic" },
+      { "name": "internals", "price": 0, "count": 50, "category": "Cosmetic" },
+      { "name": "externals", "price": 0, "count": 50, "category": "Cosmetic" },
+      {
+        "name": "customplate",
+        "price": 0,
+        "count": 50,
+        "category": "Cosmetic"
+      },
+      { "name": "headlights", "price": 0, "count": 50, "category": "Cosmetic" },
+      { "name": "rims", "price": 0, "count": 75, "category": "Cosmetic" },
+      { "name": "rollcage", "price": 0, "count": 75, "category": "Cosmetic" },
+      { "name": "underglow", "price": 0, "count": 75, "category": "Cosmetic" },
+      { "name": "stancerkit", "price": 0, "count": 75, "category": "Cosmetic" },
+      {
+        "name": "tint_supplies",
+        "price": 0,
+        "count": 75,
+        "category": "Cosmetic"
+      },
+      {
+        "name": "mechanic_tools",
+        "price": 0,
+        "count": 15,
+        "category": "Mech Tools"
+      },
+      {
+        "name": "underglow_controller",
+        "price": 0,
+        "count": 25,
+        "category": "Mech Tools"
+      },
+      { "name": "toolbox", "price": 0, "count": 15, "category": "Mech Tools" },
+      {
+        "name": "ducttape",
+        "price": 0,
+        "count": 50,
+        "category": "Tools/Equipment"
+      },
+      {
+        "name": "newoil",
+        "price": 0,
+        "count": 75,
+        "category": "Tools/Equipment"
+      },
+      {
+        "name": "cleaningkit",
+        "price": 0,
+        "count": 50,
+        "category": "Tools/Equipment"
+      },
+      {
+        "name": "repairkit",
+        "price": 0,
+        "count": 50,
+        "category": "Tools/Equipment"
+      },
+      {
+        "name": "advancedrepairkit",
+        "price": 0,
+        "count": 50,
+        "category": "Tools/Equipment"
+      },
+      {
+        "name": "noscolour",
+        "price": 0,
+        "count": 50,
+        "category": "Tools/Equipment"
+      }
+    ],
+    "locations": [
+      [-212.88, -1381.89, 31.4, 0.0],
+      [-243.14, -1398.54, 31.29, 0.0],
+      [-245.28, -1365.23, 31.27, 0.0]
+    ],
+    "targets": []
+  },
+  "hospitalPharmacy": {
+    "label": "Pharmacy",
+    "blip": { "id": 51, "colour": 59, "scale": 0.5 },
+    "models": ["S_M_M_Doctor_01"],
+    "items": [
+      { "name": "bandage", "price": 10, "count": 200, "category": "Medical" },
+      { "name": "firstaid", "price": 10, "count": 200, "category": "Medical" },
+      { "name": "ivstand", "price": 10, "count": 200, "category": "Medical" }
+    ],
+    "locations": [
+      [355.64, -1399.58, 32.51, 51.69],
+      [91.96, -1559.24, 29.59, 48.05]
+    ],
+    "targets": []
+  },
+  "blackmarket": {
+    "label": "Black Market",
+    "fluctuatePrices": true,
+    "randomStock": {
+      "availableItems": [
+        "lockpick",
+        "screwdriverset",
+        "advancedlockpick",
+        "electronickit",
+        "hacking_device",
+        "cryptostick"
+      ],
+      "minItems": 3,
+      "maxItems": 6,
+      "minQuantity": 1,
+      "maxQuantity": 5,
+      "restockIntervalMs": 7200000,
+      "basePrices": {
+        "lockpick": 500,
+        "screwdriverset": 750,
+        "advancedlockpick": 2500,
+        "electronickit": 5000,
+        "hacking_device": 3500,
+        "cryptostick": 2000
+      }
+    },
+    "items": [],
+    "locations": [],
+    "targets": []
+  },
+  "fishing_shop": {
+    "label": "Fishing Shop",
+    "items": [
+      {
+        "name": "fishingrod",
+        "price": 1000,
+        "category": "Rods",
+        "requiredSkill": { "skill": "fishing", "level": 0 },
+        "metadata": { "label": "EZ Cast 2000" }
+      },
+      {
+        "name": "logbook",
+        "price": 250,
+        "category": "Equipment",
+        "requiredSkill": { "skill": "fishing", "level": 0 },
+        "metadata": { "label": "Logbook" }
+      },
+      {
+        "name": "anchor",
+        "price": 250,
+        "category": "Equipment",
+        "requiredSkill": { "skill": "fishing", "level": 0 },
+        "metadata": { "label": "Anchor" }
+      },
+      {
+        "name": "fishingbait",
+        "price": 15,
+        "category": "Bait",
+        "requiredSkill": { "skill": "fishing", "level": 0 },
+        "metadata": { "label": "Earthworms" }
+      },
+      {
+        "name": "good_bait",
+        "price": 20,
+        "category": "Bait",
+        "requiredSkill": { "skill": "fishing", "level": 3 },
+        "metadata": { "label": "Crickets" }
+      },
+      {
+        "name": "fishingrod2",
+        "price": 3000,
+        "category": "Rods",
+        "requiredSkill": { "skill": "fishing", "level": 5 },
+        "metadata": { "label": "Coastal Caster Plus" }
+      },
+      {
+        "name": "excellent_bait",
+        "price": 25,
+        "category": "Bait",
+        "requiredSkill": { "skill": "fishing", "level": 5 },
+        "metadata": { "label": "Leeches" }
+      },
+      {
+        "name": "bait_shovel",
+        "price": 500,
+        "category": "Equipment",
+        "requiredSkill": { "skill": "fishing", "level": 8 },
+        "metadata": { "label": "Bait Shovel" }
+      },
+      {
+        "name": "fishingrod3",
+        "price": 7000,
+        "category": "Rods",
+        "requiredSkill": { "skill": "fishing", "level": 10 },
+        "metadata": { "label": "Predator Pro Rod" }
+      },
+      {
+        "name": "fishinghat",
+        "price": 5000,
+        "category": "Equipment",
+        "requiredSkill": { "skill": "fishing", "level": 12 },
+        "metadata": {
+          "label": "Lucky Fishing Hat",
+          "luckBoost": 5,
+          "hatId": 20
+        }
+      },
+      {
+        "name": "fishingnet",
+        "price": 10000,
+        "category": "Equipment",
+        "requiredSkill": { "skill": "fishing", "level": 15 },
+        "metadata": { "label": "Fishing Net" }
+      },
+      {
+        "name": "net_repair_kit",
+        "price": 1000,
+        "category": "Equipment",
+        "requiredSkill": { "skill": "fishing", "level": 15 },
+        "metadata": { "label": "Net Repair Kit" }
+      }
+    ],
+    "locations": [],
+    "targets": []
+  },
+  "huntingstore": {
+    "label": "Hunting Store",
+    "blip": { "id": 141, "colour": 2, "scale": 0.5 },
+    "models": [
+      "S_M_M_AmmuCountry",
+      "S_M_Y_AmmuCity_01",
+      "MP_M_WareMech_01",
+      "A_M_M_Farmer_01",
+      "MP_M_ExArmy_01",
+      "S_M_Y_ArmyMech_01",
+      "S_M_M_Armoured_02"
+    ],
+    "items": [
+      {
+        "name": "WEAPON_KNIFE",
+        "price": 250,
+        "count": 100,
+        "category": "Melee"
+      },
+      {
+        "name": "WEAPON_GUTKNIFE",
+        "price": 350,
+        "count": 100,
+        "category": "Melee"
+      },
+      {
+        "name": "WEAPON_BAYONETKNIFE",
+        "price": 350,
+        "count": 100,
+        "category": "Melee"
+      },
+      {
+        "name": "WEAPON_HATCHET",
+        "price": 550,
+        "count": 100,
+        "category": "Melee"
+      },
+      {
+        "name": "WEAPON_HUNTINGRIFLE",
+        "price": 12500,
+        "count": 50,
+        "license": "weapon",
+        "category": "Firearms",
+        "metadata": { "registered": true }
+      },
+      {
+        "name": "WEAPON_REVOLVER",
+        "price": 3500,
+        "count": 50,
+        "license": "weapon",
+        "category": "Firearms",
+        "metadata": { "registered": true }
+      },
+      {
+        "name": "ammo-sniper",
+        "price": 10,
+        "count": 10000,
+        "license": "weapon",
+        "category": "Ammunition"
+      },
+      {
+        "name": "ammo-44",
+        "price": 8,
+        "count": 10000,
+        "license": "weapon",
+        "category": "Ammunition"
+      }
+    ],
+    "locations": [
+      [-330.72, 6085.81, 31.45, 190.52],
+      [1693.16, 3761.94, 34.71, 189.83]
+    ],
+    "targets": []
+  },
+  "temsarmory": {
+    "label": "SAFD Armory",
+    "groups": { "safd": 1 },
+    "items": [
+      {
+        "name": "radio",
+        "price": 0,
+        "category": "Equipment",
+        "jobs": { "safd": 1 }
+      },
+      {
+        "name": "WEAPON_FLASHLIGHT",
+        "price": 0,
+        "category": "Equipment",
+        "jobs": { "safd": 1 }
+      },
+      {
+        "name": "WEAPON_FIREEXTINGUISHER",
+        "price": 0,
+        "category": "Equipment",
+        "jobs": { "safd": 1 }
+      },
+      {
+        "name": "advancedrepairkit",
+        "price": 0,
+        "category": "Equipment",
+        "jobs": { "safd": 1 }
+      },
+      {
+        "name": "bandage",
+        "price": 0,
+        "category": "Medical",
+        "jobs": { "safd": 1 }
+      },
+      {
+        "name": "painkillers",
+        "price": 0,
+        "category": "Medical",
+        "jobs": { "safd": 1 }
+      },
+      {
+        "name": "splint",
+        "price": 0,
+        "category": "Medical",
+        "jobs": { "safd": 1 }
+      },
+      {
+        "name": "narcan",
+        "price": 0,
+        "category": "Medical",
+        "jobs": { "safd": 1 }
+      },
+      {
+        "name": "ccollar",
+        "price": 0,
+        "category": "Medical",
+        "jobs": { "safd": 1 }
+      },
+      {
+        "name": "ifaks",
+        "price": 0,
+        "category": "Medical",
+        "jobs": { "safd": 1 }
+      },
+      {
+        "name": "firstaid",
+        "price": 0,
+        "category": "Medical",
+        "jobs": { "safd": 1 }
+      },
+      {
+        "name": "WEAPON_HL9P",
+        "price": 0,
+        "category": "TEMS",
+        "jobs": { "safd": 1 },
+        "license": "weapon",
+        "metadata": { "registered": true, "serial": "SAFD" }
+      },
+      {
+        "name": "WEAPON_DD11_B",
+        "price": 0,
+        "category": "TEMS",
+        "jobs": { "safd": 1 },
+        "license": "weapon",
+        "metadata": { "registered": true, "serial": "SAFD" }
+      },
+      {
+        "name": "ammo-9",
+        "price": 0,
+        "category": "TEMS",
+        "jobs": { "safd": 1 },
+        "license": "weapon"
+      },
+      {
+        "name": "ammo-rifle",
+        "price": 0,
+        "category": "TEMS",
+        "jobs": { "safd": 1 },
+        "license": "weapon"
+      },
+      {
+        "name": "at_clip_pmag40_b",
+        "price": 0,
+        "category": "TEMS",
+        "jobs": { "safd": 1 },
+        "license": "weapon"
+      },
+      {
+        "name": "at_grip_bcm_b",
+        "price": 0,
+        "category": "TEMS",
+        "jobs": { "safd": 1 },
+        "license": "weapon"
+      },
+      {
+        "name": "at_peq11_b",
+        "price": 0,
+        "category": "TEMS",
+        "jobs": { "safd": 1 },
+        "license": "weapon"
+      },
+      {
+        "name": "at_scope_ddm4_hhsvc_b",
+        "price": 0,
+        "category": "TEMS",
+        "jobs": { "safd": 1 },
+        "license": "weapon"
+      },
+      {
+        "name": "lightpc",
+        "price": 0,
+        "category": "TEMS",
+        "jobs": { "safd": 1 }
+      },
+      {
+        "name": "lightplate",
+        "price": 0,
+        "category": "TEMS",
+        "jobs": { "safd": 1 }
+      },
+      {
+        "name": "heavypc",
+        "price": 0,
+        "category": "TEMS",
+        "jobs": { "safd": 1 }
+      },
+      {
+        "name": "heavyplate",
+        "price": 0,
+        "category": "TEMS",
+        "jobs": { "safd": 1 }
+      }
+    ],
+    "locations": [
+      [-1707.43, 76.47, 67.95, 0.0],
+      [348.89, -575.48, 28.8, 0.0],
+      [2507.58, 4224.5, 41.32, 0.0]
+    ],
+    "targets": []
+  },
+  "storagestore": {
+    "label": "Bags & Accessories Retailer",
+    "blip": { "id": 457, "colour": 2, "scale": 0.5 },
+    "models": ["IG_LifeInvad_01", "IG_LifeInvad_02", "CS_LifeInvad_01"],
+    "items": [
+      { "name": "backpack", "price": 1000, "count": 50, "category": "Misc" },
+      { "name": "wallet", "price": 100, "count": 50, "category": "Misc" }
+    ],
+    "locations": [
+      [83.3, -1794.21, 29.62, 54.64],
+      [2677.17, 3351.39, 57.12, 341.85]
+    ],
+    "targets": []
+  },
+  "pawnshop": {
+    "label": "Pawn Shop",
+    "shopType": "buy",
+    "blip": { "id": 267, "colour": 5, "scale": 0.6 },
+    "models": ["a_m_m_hasjew_01"],
+    "buyItems": [
+      {
+        "name": "vintage_watch",
+        "buyPrice": 1500,
+        "category": "Treasures",
+        "isStolen": false
+      },
+      {
+        "name": "emperors_jade",
+        "buyPrice": 3000,
+        "category": "Treasures",
+        "isStolen": false
+      },
+      {
+        "name": "pharaohs_scarab",
+        "buyPrice": 5000,
+        "category": "Treasures",
+        "isStolen": false
+      },
+      {
+        "name": "megalodon_tooth",
+        "buyPrice": 7500,
+        "category": "Treasures",
+        "isStolen": false
+      },
+      {
+        "name": "captain_compass",
+        "buyPrice": 4000,
+        "category": "Treasures",
+        "isStolen": false
+      },
+      {
+        "name": "captain_spyglass",
+        "buyPrice": 2000,
+        "category": "Treasures",
+        "isStolen": false
+      },
+      {
+        "name": "antique_locket",
+        "buyPrice": 3500,
+        "category": "Treasures",
+        "isStolen": false
+      },
+      {
+        "name": "gold_coin",
+        "buyPrice": 1500,
+        "category": "Treasures",
+        "isStolen": false
+      },
+      {
+        "name": "atlantean_coin",
+        "buyPrice": 20000,
+        "category": "Treasures",
+        "isStolen": false
+      },
+      {
+        "name": "x_microwave",
+        "buyPrice": 800,
+        "category": "Electronics",
+        "isStolen": false
+      },
+      {
+        "name": "x_musicequipment",
+        "buyPrice": 500,
+        "category": "Electronics",
+        "isStolen": false
+      },
+      {
+        "name": "x_pcequipment",
+        "buyPrice": 350,
+        "category": "Electronics",
+        "isStolen": false
+      },
+      {
+        "name": "electronickit-1",
+        "buyPrice": 50,
+        "category": "Electronics",
+        "isStolen": false
+      },
+      {
+        "name": "circuit_board",
+        "buyPrice": 25,
+        "category": "Electronics",
+        "isStolen": false
+      },
+      {
+        "name": "WEAPON_PISTOL",
+        "buyPrice": 500,
+        "category": "Weapons",
+        "isStolen": false
+      },
+      {
+        "name": "weapon_hl9pa",
+        "buyPrice": 800,
+        "category": "Weapons",
+        "isStolen": false
+      },
+      {
+        "name": "WEAPON_PUMPSHOTGUN",
+        "buyPrice": 1200,
+        "category": "Weapons",
+        "isStolen": false
+      },
+      {
+        "name": "rusty_pistol",
+        "buyPrice": 200,
+        "category": "Weapons",
+        "isStolen": false
+      },
+      {
+        "name": "rusty_revolver",
+        "buyPrice": 250,
+        "category": "Weapons",
+        "isStolen": false
+      },
+      {
+        "name": "WEAPON_APPISTOL",
+        "buyPrice": 1500,
+        "category": "Weapons",
+        "isStolen": false
+      },
+      {
+        "name": "WEAPON_SWITCHBLADE",
+        "buyPrice": 75,
+        "category": "Weapons",
+        "isStolen": false
+      },
+      {
+        "name": "WEAPON_KNIFE",
+        "buyPrice": 50,
+        "category": "Weapons",
+        "isStolen": false
+      },
+      {
+        "name": "WEAPON_KNUCKLE",
+        "buyPrice": 50,
+        "category": "Weapons",
+        "isStolen": false
+      },
+      {
+        "name": "pistolframe_part",
+        "buyPrice": 100,
+        "category": "Weapon Parts",
+        "isStolen": false
+      },
+      {
+        "name": "pistolslide_part",
+        "buyPrice": 100,
+        "category": "Weapon Parts",
+        "isStolen": false
+      },
+      {
+        "name": "pistolgrip_part",
+        "buyPrice": 100,
+        "category": "Weapon Parts",
+        "isStolen": false
+      },
+      {
+        "name": "pistoltrigger_part",
+        "buyPrice": 100,
+        "category": "Weapon Parts",
+        "isStolen": false
+      },
+      {
+        "name": "rifleframe_part",
+        "buyPrice": 200,
+        "category": "Weapon Parts",
+        "isStolen": false
+      },
+      {
+        "name": "riflestock_part",
+        "buyPrice": 200,
+        "category": "Weapon Parts",
+        "isStolen": false
+      },
+      {
+        "name": "riflebarrel_part",
+        "buyPrice": 200,
+        "category": "Weapon Parts",
+        "isStolen": false
+      },
+      {
+        "name": "rifletrigger_part",
+        "buyPrice": 200,
+        "category": "Weapon Parts",
+        "isStolen": false
+      },
+      {
+        "name": "rusty_frame",
+        "buyPrice": 50,
+        "category": "Weapon Parts",
+        "isStolen": false
+      },
+      {
+        "name": "rusty_barrel",
+        "buyPrice": 50,
+        "category": "Weapon Parts",
+        "isStolen": false
+      },
+      {
+        "name": "rusty_trigger",
+        "buyPrice": 50,
+        "category": "Weapon Parts",
+        "isStolen": false
+      },
+      {
+        "name": "at_suppressor_light",
+        "buyPrice": 300,
+        "category": "Weapon Parts",
+        "isStolen": false
+      },
+      {
+        "name": "lightplate",
+        "buyPrice": 500,
+        "category": "Armor",
+        "isStolen": false
+      },
+      {
+        "name": "heavyplate",
+        "buyPrice": 800,
+        "category": "Armor",
+        "isStolen": false
+      },
+      {
+        "name": "x_coffeemaker",
+        "buyPrice": 600,
+        "category": "Electronics",
+        "isStolen": false
+      },
+      {
+        "name": "x_laptop",
+        "buyPrice": 500,
+        "category": "Electronics",
+        "isStolen": false
+      },
+      {
+        "name": "drillbit",
+        "buyPrice": 75,
+        "category": "Tools",
+        "isStolen": false
+      },
+      {
+        "name": "usb_drive1",
+        "buyPrice": 50,
+        "category": "Tools",
+        "isStolen": false
+      },
+      {
+        "name": "usb_drive3",
+        "buyPrice": 100,
+        "category": "Tools",
+        "isStolen": false
+      },
+      {
+        "name": "radio",
+        "buyPrice": 50,
+        "category": "Misc",
+        "isStolen": false
+      },
+      {
+        "name": "x_artpiece",
+        "buyPrice": 750,
+        "category": "Collectibles",
+        "isStolen": false
+      },
+      {
+        "name": "x_guitar",
+        "buyPrice": 500,
+        "category": "Collectibles",
+        "isStolen": false
+      },
+      {
+        "name": "x_painting",
+        "buyPrice": 750,
+        "category": "Collectibles",
+        "isStolen": false
+      },
+      {
+        "name": "x_painting2",
+        "buyPrice": 750,
+        "category": "Collectibles",
+        "isStolen": false
+      },
+      {
+        "name": "x_suitcase",
+        "buyPrice": 150,
+        "category": "Collectibles",
+        "isStolen": false
+      },
+      {
+        "name": "yphone_natural",
+        "buyPrice": 600,
+        "category": "Electronics",
+        "isStolen": false
+      },
+      {
+        "name": "yphone_black",
+        "buyPrice": 600,
+        "category": "Electronics",
+        "isStolen": false
+      },
+      {
+        "name": "yphone_white",
+        "buyPrice": 600,
+        "category": "Electronics",
+        "isStolen": false
+      },
+      {
+        "name": "yphone_blue",
+        "buyPrice": 600,
+        "category": "Electronics",
+        "isStolen": false
+      },
+      {
+        "name": "yphone_fold_black",
+        "buyPrice": 600,
+        "category": "Electronics",
+        "isStolen": false
+      },
+      {
+        "name": "yflip_mint",
+        "buyPrice": 600,
+        "category": "Electronics",
+        "isStolen": false
+      },
+      {
+        "name": "yflip_gold",
+        "buyPrice": 600,
+        "category": "Electronics",
+        "isStolen": false
+      },
+      {
+        "name": "yflip_graphite",
+        "buyPrice": 600,
+        "category": "Electronics",
+        "isStolen": false
+      },
+      {
+        "name": "yflip_lavender",
+        "buyPrice": 600,
+        "category": "Electronics",
+        "isStolen": false
+      },
+      {
+        "name": "y24_black",
+        "buyPrice": 600,
+        "category": "Electronics",
+        "isStolen": false
+      },
+      {
+        "name": "y24_silver",
+        "buyPrice": 600,
+        "category": "Electronics",
+        "isStolen": false
+      },
+      {
+        "name": "y24_violet",
+        "buyPrice": 600,
+        "category": "Electronics",
+        "isStolen": false
+      },
+      {
+        "name": "y24_yellow",
+        "buyPrice": 600,
+        "category": "Electronics",
+        "isStolen": false
+      },
+      {
+        "name": "yfold_black",
+        "buyPrice": 600,
+        "category": "Electronics",
+        "isStolen": false
+      },
+      {
+        "name": "boombox",
+        "buyPrice": 250,
+        "category": "Electronics",
+        "isStolen": false
+      },
+      {
+        "name": "miniradio",
+        "buyPrice": 250,
+        "category": "Electronics",
+        "isStolen": false
+      },
+      {
+        "name": "laptop4",
+        "buyPrice": 500,
+        "category": "Electronics",
+        "isStolen": false
+      }
+    ],
+    "locations": [[56.2185, -1564.8311, 29.4595, 294.83]],
+    "targets": []
+  },
+  "fence": {
+    "label": "The Fence",
+    "shopType": "buy",
+    "models": ["g_m_y_famdnf_01"],
+    "buyItems": [
+      {
+        "name": "giant_gem",
+        "buyPrice": 20000,
+        "category": "Gems",
+        "isStolen": true
+      },
+      {
+        "name": "diamond",
+        "buyPrice": 12000,
+        "category": "Gems",
+        "isStolen": true
+      },
+      {
+        "name": "diamond_necklace",
+        "buyPrice": 1000,
+        "category": "Jewelry",
+        "isStolen": true
+      },
+      {
+        "name": "ruby_necklace",
+        "buyPrice": 1000,
+        "category": "Jewelry",
+        "isStolen": true
+      },
+      {
+        "name": "sapphire_necklace",
+        "buyPrice": 1000,
+        "category": "Jewelry",
+        "isStolen": true
+      },
+      {
+        "name": "emerald_necklace",
+        "buyPrice": 1000,
+        "category": "Jewelry",
+        "isStolen": true
+      },
+      {
+        "name": "diamondring",
+        "buyPrice": 1000,
+        "category": "Jewelry",
+        "isStolen": true
+      },
+      {
+        "name": "ruby_ring",
+        "buyPrice": 1000,
+        "category": "Jewelry",
+        "isStolen": true
+      },
+      {
+        "name": "sapphire_ring",
+        "buyPrice": 1000,
+        "category": "Jewelry",
+        "isStolen": true
+      },
+      {
+        "name": "emerald_ring",
+        "buyPrice": 1000,
+        "category": "Jewelry",
+        "isStolen": true
+      },
+      {
+        "name": "diamond_earring",
+        "buyPrice": 1000,
+        "category": "Jewelry",
+        "isStolen": true
+      },
+      {
+        "name": "sapphire_earring",
+        "buyPrice": 500,
+        "category": "Jewelry",
+        "isStolen": true
+      },
+      {
+        "name": "ruby_earring",
+        "buyPrice": 500,
+        "category": "Jewelry",
+        "isStolen": true
+      },
+      {
+        "name": "emerald_earring",
+        "buyPrice": 500,
+        "category": "Jewelry",
+        "isStolen": true
+      },
+      {
+        "name": "rolex",
+        "buyPrice": 300,
+        "category": "Jewelry",
+        "isStolen": true
+      },
+      {
+        "name": "goldchain2",
+        "buyPrice": 500,
+        "category": "Jewelry",
+        "isStolen": true
+      },
+      {
+        "name": "goldingot",
+        "buyPrice": 3000,
+        "category": "Valuables",
+        "isStolen": true
+      },
+      {
+        "name": "fleeca_key",
+        "buyPrice": 5000,
+        "category": "Special",
+        "isStolen": true
+      },
+      {
+        "name": "vangelicokey",
+        "buyPrice": 3000,
+        "category": "Special",
+        "isStolen": true
+      },
+      {
+        "name": "moneywash_card",
+        "buyPrice": 2500,
+        "category": "Special",
+        "isStolen": true
+      },
+      {
+        "name": "traphousekey",
+        "buyPrice": 2000,
+        "category": "Special",
+        "isStolen": true
+      },
+      {
+        "name": "fleecacard",
+        "buyPrice": 1500,
+        "category": "Special",
+        "isStolen": true
+      },
+      {
+        "name": "card_bank",
+        "buyPrice": 100,
+        "category": "Special",
+        "isStolen": true
+      },
+      {
+        "name": "lockpick",
+        "buyPrice": 25,
+        "category": "Tools",
+        "isStolen": true
+      },
+      {
+        "name": "advancedlockpick",
+        "buyPrice": 150,
+        "category": "Tools",
+        "isStolen": true
+      },
+      {
+        "name": "hacking_device",
+        "buyPrice": 500,
+        "category": "Tools",
+        "isStolen": true
+      },
+      {
+        "name": "cryptostick",
+        "buyPrice": 300,
+        "category": "Tools",
+        "isStolen": true
+      },
+      {
+        "name": "gatecrack",
+        "buyPrice": 400,
+        "category": "Tools",
+        "isStolen": true
+      },
+      {
+        "name": "bitcoin",
+        "buyPrice": 50000,
+        "category": "Valuables",
+        "isStolen": true
+      },
+      {
+        "name": "item_smokegrenade",
+        "buyPrice": 100,
+        "category": "Misc",
+        "isStolen": true
+      }
+    ],
+    "locations": [[56.2357, -1566.9513, 29.4582, 283.88]],
+    "targets": []
+  }
+}

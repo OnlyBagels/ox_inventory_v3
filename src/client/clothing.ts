@@ -1,5 +1,5 @@
 import type { Clothing } from '@common/item/index';
-import { cache, notify, requestModel, sleep } from '@overextended/ox_lib/client';
+import { cache, notify, requestModel, sleep } from '@communityox/ox_lib/client';
 
 /**
  * Working out how to get clothing labels and "correct" torso components wouldn't

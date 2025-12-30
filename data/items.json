@@ -1,934 +1,118 @@
 {
-  "acidpackage": {
-    "category": "throwable",
-    "hash": -135142818,
+  "id_card": {
+    "label": "Identification Card"
+  },
+  "driver_license": {
+    "label": "Drivers License"
+  },
+  "armour": {
+    "label": "Bulletproof Vest",
+    "weight": 3000,
+    "stackSize": 1
+  },
+  "backpack": {
+    "category": "container",
+    "label": "Backpack",
+    "weight": 1000,
     "height": 2,
-    "label": "Acid Package",
-    "weight": 120
+    "width": 2,
+    "inventory": {
+      "weight": 20000,
+      "height": 5,
+      "width": 5
+    }
   },
-  "advancedrifle": {
-    "category": "weapon",
-    "hash": -1357824103,
-    "height": 2,
-    "label": "Advanced Rifle",
-    "weight": 3100,
-    "width": 4
+  "bandage": {
+    "label": "Bandage",
+    "weight": 115,
+    "consume": 1,
+    "client": {
+      "usetime": 3000
+    }
   },
-  "ammo_22": {
-    "category": "ammo",
-    "label": ".22 LR",
-    "weight": 3
+  "bank": {
+    "label": "Bank Balance",
+    "weight": 0,
+    "stackSize": 1000000
   },
-  "ammo_308": {
-    "category": "ammo",
-    "label": ".308 Winchester",
-    "weight": 9
+  "black_money": {
+    "label": "Dirty Money"
   },
-  "ammo_38": {
-    "category": "ammo",
-    "label": ".38 LC",
-    "weight": 15
+  "briefcase": {
+    "category": "container",
+    "label": "Briefcase",
+    "weight": 500,
+    "width": 2,
+    "inventory": {
+      "weight": 10000,
+      "height": 3,
+      "width": 4
+    }
   },
-  "ammo_44": {
-    "category": "ammo",
-    "label": ".44 Magnum",
-    "weight": 16
+  "burger": {
+    "label": "Burger",
+    "weight": 220,
+    "consume": 1,
+    "client": {
+      "usetime": 2500,
+      "notification": "You ate a delicious burger"
+    }
   },
-  "ammo_45": {
-    "category": "ammo",
-    "label": ".45 ACP",
-    "weight": 15
+  "clothing": {
+    "label": "Clothing",
+    "consume": 0
   },
-  "ammo_50": {
-    "category": "ammo",
-    "label": ".50 AE",
-    "weight": 45
+  "cola": {
+    "label": "eCola",
+    "weight": 350,
+    "degrade": 60,
+    "consume": 1,
+    "client": {
+      "usetime": 2500,
+      "notification": "You drank a refreshing eCola"
+    }
   },
-  "ammo_50bmg": {
-    "category": "ammo",
-    "label": ".50 BMG",
-    "weight": 51
+  "garbage": {
+    "label": "Garbage"
   },
-  "ammo_556": {
-    "category": "ammo",
-    "label": "5.56x45",
-    "weight": 4
+  "identification": {
+    "label": "Identification",
+    "weight": 10
   },
-  "ammo_762": {
-    "category": "ammo",
-    "label": "7.62x39",
-    "weight": 8
+  "lockpick": {
+    "label": "Lockpick",
+    "weight": 160
   },
-  "ammo_9": {
-    "category": "ammo",
-    "label": "9mm",
-    "weight": 7
+  "mastercard": {
+    "label": "Fleeca Card",
+    "weight": 10,
+    "stackSize": 1
   },
-  "ammo_emp": {
-    "category": "ammo",
-    "label": "EMP round",
-    "weight": 400
+  "medikit": {
+    "label": "First Aid Kit",
+    "weight": 500,
+    "consume": 1,
+    "client": {
+      "usetime": 5000
+    }
   },
-  "ammo_firework": {
-    "category": "ammo",
-    "height": 2,
-    "label": "Firework",
-    "weight": 200
+  "money": {
+    "label": "Money"
   },
-  "ammo_flare": {
-    "category": "ammo",
-    "label": "Flare round",
-    "weight": 38
-  },
-  "ammo_grenade": {
-    "category": "ammo",
-    "label": "40mm Explosive",
-    "weight": 400
-  },
-  "ammo_laser": {
-    "category": "ammo",
-    "label": "Laser charge",
-    "weight": 1
-  },
-  "ammo_musket": {
-    "category": "ammo",
-    "label": ".50 Ball",
-    "weight": 38
-  },
-  "ammo_railgun": {
-    "category": "ammo",
-    "label": "Railgun charge",
-    "weight": 150
-  },
-  "ammo_rocket": {
-    "category": "ammo",
-    "height": 2,
-    "label": "Rocket",
+  "mustard": {
+    "label": "Mustard",
     "weight": 500
   },
-  "ammo_shotgun": {
-    "category": "ammo",
-    "label": "12 Gauge",
-    "weight": 38
+  "paperbag": {
+    "label": "Paper Bag",
+    "weight": 1,
+    "stackSize": 1,
+    "consume": 0
   },
-  "appistol": {
-    "category": "weapon",
-    "hash": 584646201,
-    "label": "AP Pistol",
-    "weight": 1400,
-    "width": 2
-  },
-  "assaultrifle": {
-    "category": "weapon",
-    "hash": -1074790547,
-    "height": 2,
-    "label": "Assault Rifle",
-    "weight": 4500,
-    "width": 4
-  },
-  "assaultriflemk2": {
-    "category": "weapon",
-    "hash": 961495388,
-    "height": 2,
-    "label": "Assault Rifle Mk II",
-    "weight": 2950,
-    "width": 4
-  },
-  "assaultshotgun": {
-    "category": "weapon",
-    "hash": -494615257,
-    "height": 2,
-    "label": "Assault Shotgun",
-    "weight": 5200,
-    "width": 4
-  },
-  "assaultsmg": {
-    "category": "weapon",
-    "hash": -270015777,
-    "height": 2,
-    "label": "Assault SMG",
-    "weight": 2900,
-    "width": 3
-  },
-  "autoshotgun": {
-    "category": "weapon",
-    "hash": 317205821,
-    "height": 2,
-    "label": "Sweeper Shotgun",
-    "weight": 4400,
-    "width": 4
-  },
-  "ball": {
-    "category": "throwable",
-    "hash": 600439132,
-    "label": "Ball",
-    "weight": 149
-  },
-  "bat": {
-    "category": "weapon",
-    "hash": -1786099057,
-    "height": 2,
-    "label": "Baseball Bat",
-    "weight": 1134
-  },
-  "battleaxe": {
-    "category": "weapon",
-    "hash": -853065399,
-    "height": 3,
-    "label": "Battle Axe",
-    "weight": 6500,
-    "width": 4
-  },
-  "battlerifle": {
-    "category": "weapon",
-    "hash": 1924557585,
-    "height": 2,
-    "label": "Battle Rifle",
-    "weight": 3300,
-    "width": 4
-  },
-  "bottle": {
-    "category": "weapon",
-    "hash": -102323637,
-    "height": 2,
-    "label": "Bottle",
-    "weight": 350
-  },
-  "bullpuprifle": {
-    "category": "weapon",
-    "hash": 2132975508,
-    "height": 2,
-    "label": "Bullpup Rifle",
-    "weight": 2900,
-    "width": 5
-  },
-  "bullpupriflemk2": {
-    "category": "weapon",
-    "hash": -2066285827,
-    "height": 2,
-    "label": "Bullpup Rifle Mk II",
-    "weight": 2900,
-    "width": 5
-  },
-  "bullpupshotgun": {
-    "category": "weapon",
-    "hash": -1654528753,
-    "height": 2,
-    "label": "Bullpup Shotgun",
-    "weight": 3100,
-    "width": 4
-  },
-  "bzgas": {
-    "category": "throwable",
-    "hash": -1600701090,
-    "label": "BZ Gas",
-    "weight": 600
-  },
-  "candycane": {
-    "category": "weapon",
-    "hash": 1703483498,
-    "height": 2,
-    "label": "Candy Cane",
-    "weight": 85
-  },
-  "carbinerifle": {
-    "category": "weapon",
-    "hash": -2084633992,
-    "height": 2,
-    "label": "Carbine Rifle",
-    "weight": 3100,
-    "width": 4
-  },
-  "carbineriflemk2": {
-    "category": "weapon",
-    "hash": -86904375,
-    "height": 2,
-    "label": "Carbine Rifle Mk II",
-    "weight": 3000,
-    "width": 4
-  },
-  "ceramicpistol": {
-    "category": "weapon",
-    "hash": 727643628,
-    "label": "Ceramic Pistol",
-    "weight": 800,
-    "width": 2
-  },
-  "combatmg": {
-    "category": "weapon",
-    "hash": 2144741730,
-    "height": 3,
-    "label": "Combat MG",
-    "weight": 7500,
-    "width": 4
-  },
-  "combatmgmk2": {
-    "category": "weapon",
-    "hash": -608341376,
-    "height": 3,
-    "label": "Combat MG Mk II",
+  "parachute": {
+    "label": "Parachute",
     "weight": 8000,
-    "width": 4
-  },
-  "combatpdw": {
-    "category": "weapon",
-    "hash": 171789620,
-    "height": 2,
-    "label": "Combat PDW",
-    "weight": 2300,
-    "width": 4
-  },
-  "combatpistol": {
-    "category": "weapon",
-    "hash": 1593441988,
-    "label": "Combat Pistol",
-    "weight": 785,
-    "width": 2
-  },
-  "combatshotgun": {
-    "category": "weapon",
-    "hash": 94989220,
-    "height": 2,
-    "label": "Combat Shotgun",
-    "weight": 4400,
-    "width": 4
-  },
-  "compactlauncher": {
-    "category": "weapon",
-    "hash": 125959754,
-    "height": 2,
-    "label": "Compact Grenade Launcher",
-    "weight": 2500,
-    "width": 3
-  },
-  "compactrifle": {
-    "category": "weapon",
-    "hash": 1649403952,
-    "height": 2,
-    "label": "Compact Rifle",
-    "weight": 3600,
-    "width": 3
-  },
-  "crowbar": {
-    "category": "weapon",
-    "hash": -2067956739,
-    "height": 2,
-    "label": "Crowbar",
-    "weight": 2500,
-    "width": 5
-  },
-  "dagger": {
-    "category": "weapon",
-    "hash": -1834847097,
-    "label": "Antique Cavalry Dagger",
-    "weight": 800,
-    "width": 2
-  },
-  "dbshotgun": {
-    "category": "weapon",
-    "hash": -275439685,
-    "height": 2,
-    "label": "Double Barrel Shotgun",
-    "weight": 3175,
-    "width": 4
-  },
-  "doubleaction": {
-    "category": "weapon",
-    "hash": -1746263880,
-    "label": "Double-Action Revolver",
-    "weight": 940,
-    "width": 2
-  },
-  "emplauncher": {
-    "category": "weapon",
-    "hash": -618237638,
-    "height": 2,
-    "label": "Compact EMP Launcher",
-    "weight": 2750,
-    "width": 3
-  },
-  "fertilizercan": {
-    "category": "weapon",
-    "hash": 406929569,
-    "height": 3,
-    "label": "Fertilizer Can",
-    "weight": 12000,
-    "width": 4
-  },
-  "fireextinguisher": {
-    "category": "weapon",
-    "hash": 101631238,
-    "height": 3,
-    "label": "Fire Extinguisher",
-    "weight": 8616,
-    "width": 4
-  },
-  "firework": {
-    "category": "weapon",
-    "hash": 2138347493,
-    "height": 2,
-    "label": "Firework Launcher",
-    "weight": 1000,
-    "width": 5
-  },
-  "flare": {
-    "category": "throwable",
-    "hash": 1233104067,
-    "label": "Flare",
-    "weight": 250
-  },
-  "flaregun": {
-    "category": "weapon",
-    "hash": 1198879012,
-    "label": "Flare Gun",
-    "weight": 1000,
-    "width": 2
-  },
-  "flashlight": {
-    "category": "weapon",
-    "hash": -1951375401,
-    "height": 2,
-    "label": "Flashlight",
-    "weight": 125
-  },
-  "gadgetpistol": {
-    "category": "weapon",
-    "hash": 1470379660,
-    "label": "Perico Pistol",
-    "weight": 1750,
-    "width": 2
-  },
-  "golfclub": {
-    "category": "weapon",
-    "hash": 1141786504,
-    "height": 2,
-    "label": "Golf Club",
-    "weight": 330
-  },
-  "grenade": {
-    "category": "throwable",
-    "hash": -1813897027,
-    "label": "Grenade",
-    "weight": 400
-  },
-  "grenadelauncher": {
-    "category": "weapon",
-    "hash": -1568386805,
-    "height": 2,
-    "label": "Grenade Launcher",
-    "weight": 6500,
-    "width": 4
-  },
-  "grenadelaunchersmoke": {
-    "category": "weapon",
-    "hash": 1305664598,
-    "height": 2,
-    "label": "Tear Gas Launcher",
-    "weight": 6000,
-    "width": 4
-  },
-  "gusenberg": {
-    "category": "weapon",
-    "hash": 1627465347,
-    "height": 2,
-    "label": "Gusenberg Sweeper",
-    "weight": 4900,
-    "width": 4
-  },
-  "hammer": {
-    "category": "weapon",
-    "hash": 1317494643,
-    "label": "Hammer",
-    "weight": 1200,
-    "width": 2
-  },
-  "hatchet": {
-    "category": "weapon",
-    "hash": -102973651,
-    "label": "Hatchet",
-    "weight": 1000,
-    "width": 2
-  },
-  "hazardcan": {
-    "category": "weapon",
-    "hash": -1168940174,
-    "height": 3,
-    "label": "Hazardous Jerry Can",
-    "weight": 12000,
-    "width": 4
-  },
-  "heavypistol": {
-    "category": "weapon",
-    "hash": -771403250,
-    "label": "Heavy Pistol",
-    "weight": 1100,
-    "width": 2
-  },
-  "heavyrifle": {
-    "category": "weapon",
-    "hash": -947031628,
-    "height": 2,
-    "label": "Heavy Rifle",
-    "weight": 3300,
-    "width": 4
-  },
-  "heavyshotgun": {
-    "category": "weapon",
-    "hash": 984333226,
-    "height": 2,
-    "label": "Heavy Shotgun",
-    "weight": 3600,
-    "width": 4
-  },
-  "heavysniper": {
-    "category": "weapon",
-    "hash": 205991906,
-    "height": 3,
-    "label": "Heavy Sniper",
-    "weight": 12700,
-    "width": 4
-  },
-  "heavysnipermk2": {
-    "category": "weapon",
-    "hash": 177293209,
-    "height": 3,
-    "label": "Heavy Sniper Mk II",
-    "weight": 14000,
-    "width": 4
-  },
-  "hominglauncher": {
-    "category": "weapon",
-    "hash": 1672152130,
-    "height": 2,
-    "label": "Homing Launcher",
-    "weight": 10000,
-    "width": 5
-  },
-  "knife": {
-    "category": "weapon",
-    "hash": -1716189206,
-    "height": 2,
-    "label": "Knife",
-    "weight": 300
-  },
-  "knuckle": {
-    "category": "weapon",
-    "hash": -656458692,
-    "label": "Knuckle Duster",
-    "weight": 300
-  },
-  "machete": {
-    "category": "weapon",
-    "hash": -581044007,
-    "label": "Machete",
-    "weight": 1000,
-    "width": 2
-  },
-  "machinepistol": {
-    "category": "weapon",
-    "hash": -619010992,
-    "label": "Machine Pistol",
-    "weight": 1400,
-    "width": 2
-  },
-  "marksmanpistol": {
-    "category": "weapon",
-    "hash": -598887786,
-    "label": "Marksman Pistol",
-    "weight": 1588,
-    "width": 3
-  },
-  "marksmanrifle": {
-    "category": "weapon",
-    "hash": -952879014,
-    "height": 3,
-    "label": "Marksman Rifle",
-    "weight": 7500,
-    "width": 4
-  },
-  "marksmanriflemk2": {
-    "category": "weapon",
-    "hash": 1785463520,
-    "height": 2,
-    "label": "Marksman Rifle Mk II",
-    "weight": 4000,
-    "width": 4
-  },
-  "metaldetector": {
-    "category": "weapon",
-    "label": "Metal Detector",
-    "weight": 1200,
-    "width": 2
-  },
-  "mg": {
-    "category": "weapon",
-    "hash": -1660422300,
-    "height": 3,
-    "label": "MG",
-    "weight": 9000,
-    "width": 4
-  },
-  "microsmg": {
-    "category": "weapon",
-    "hash": 324215364,
-    "height": 2,
-    "label": "Micro SMG",
-    "weight": 3000,
-    "width": 3
-  },
-  "militaryrifle": {
-    "category": "weapon",
-    "hash": -1658906650,
-    "height": 2,
-    "label": "Military Rifle",
-    "weight": 3600,
-    "width": 4
-  },
-  "minigun": {
-    "category": "weapon",
-    "hash": 1119849093,
-    "height": 4,
-    "label": "Minigun",
-    "weight": 38500,
-    "width": 4
-  },
-  "minismg": {
-    "category": "weapon",
-    "hash": -1121678507,
-    "label": "Mini SMG",
-    "weight": 1270,
-    "width": 3
-  },
-  "molotov": {
-    "category": "throwable",
-    "hash": 615608432,
-    "label": "Molotov",
-    "weight": 1800
-  },
-  "musket": {
-    "category": "weapon",
-    "hash": -1466123874,
-    "height": 2,
-    "label": "Musket",
-    "weight": 4500,
-    "width": 4
-  },
-  "navyrevolver": {
-    "category": "weapon",
-    "hash": -1853920116,
-    "height": 2,
-    "label": "Navy Revolver",
-    "weight": 4000,
-    "width": 4
-  },
-  "nightstick": {
-    "category": "weapon",
-    "hash": 1737195953,
-    "label": "Nightstick",
-    "weight": 1000,
-    "width": 2
-  },
-  "petrolcan": {
-    "category": "weapon",
-    "hash": 883325847,
-    "height": 2,
-    "label": "Jerry Can",
-    "weight": 4000,
-    "width": 4
-  },
-  "pipebomb": {
-    "category": "throwable",
-    "hash": -1169823560,
-    "label": "Pipe Bomb",
-    "weight": 1800
-  },
-  "pistol": {
-    "category": "weapon",
-    "hash": 453432689,
-    "label": "Pistol",
-    "weight": 1130,
-    "width": 2
-  },
-  "pistol50": {
-    "category": "weapon",
-    "hash": -1716589765,
-    "label": "Pistol .50",
-    "weight": 2000,
-    "width": 2
-  },
-  "pistolmk2": {
-    "category": "weapon",
-    "hash": -1075685676,
-    "label": "Pistol Mk II",
-    "weight": 1000,
-    "width": 2
-  },
-  "pistolxm3": {
-    "category": "weapon",
-    "hash": 465894841,
-    "label": "WM 29 Pistol",
-    "weight": 850,
-    "width": 2
-  },
-  "poolcue": {
-    "category": "weapon",
-    "hash": -1810795771,
-    "height": 2,
-    "label": "Pool Cue",
-    "weight": 146
-  },
-  "precisionrifle": {
-    "category": "weapon",
-    "hash": 1853742572,
-    "height": 3,
-    "label": "Precision Rifle",
-    "weight": 4800,
-    "width": 4
-  },
-  "proxmine": {
-    "category": "throwable",
-    "hash": -1420407917,
-    "label": "Proximity Mine",
-    "weight": 2500
-  },
-  "pumpshotgun": {
-    "category": "weapon",
-    "hash": 487013001,
-    "height": 2,
-    "label": "Pump Shotgun",
-    "weight": 3400,
-    "width": 4
-  },
-  "pumpshotgunmk2": {
-    "category": "weapon",
-    "hash": 1432025498,
-    "height": 2,
-    "label": "Pump Shotgun Mk II",
-    "weight": 3200,
-    "width": 4
-  },
-  "railgun": {
-    "category": "weapon",
-    "hash": 1834241177,
-    "height": 2,
-    "label": "Railgun",
-    "weight": 3570,
-    "width": 4
-  },
-  "railgunxm3": {
-    "category": "weapon",
-    "hash": -22923932,
-    "height": 2,
-    "label": "Railgun",
-    "weight": 3570,
-    "width": 4
-  },
-  "raycarbine": {
-    "category": "weapon",
-    "hash": 1198256469,
-    "height": 2,
-    "label": "Unholy Hellbringer",
-    "weight": 3620,
-    "width": 4
-  },
-  "rayminigun": {
-    "category": "weapon",
-    "hash": -1238556825,
-    "height": 3,
-    "label": "Widowmaker",
-    "weight": 7000,
-    "width": 4
-  },
-  "raypistol": {
-    "category": "weapon",
-    "hash": -1355376991,
-    "label": "Up-n-Atomizer",
-    "weight": 1540,
-    "width": 2
-  },
-  "revolver": {
-    "category": "weapon",
-    "hash": -1045183535,
-    "height": 2,
-    "label": "Heavy Revolver",
-    "weight": 2260,
-    "width": 4
-  },
-  "revolvermk2": {
-    "category": "weapon",
-    "hash": -879347409,
-    "height": 2,
-    "label": "Heavy Revolver Mk II",
-    "weight": 2600,
-    "width": 5
-  },
-  "rpg": {
-    "category": "weapon",
-    "hash": -1312131151,
-    "height": 3,
-    "label": "RPG",
-    "weight": 5000,
-    "width": 4
-  },
-  "sawnoffshotgun": {
-    "category": "weapon",
-    "hash": 2017895192,
-    "height": 2,
-    "label": "Sawed-Off Shotgun",
-    "weight": 2380,
-    "width": 5
-  },
-  "smg": {
-    "category": "weapon",
-    "hash": 736523883,
-    "height": 2,
-    "label": "SMG",
-    "weight": 3084,
-    "width": 3
-  },
-  "smgmk2": {
-    "category": "weapon",
-    "hash": 2024373456,
-    "height": 2,
-    "label": "SMG Mk II",
-    "weight": 2700,
-    "width": 3
-  },
-  "smokegrenade": {
-    "category": "throwable",
-    "hash": -37975472,
-    "label": "Tear Gas",
-    "weight": 600
-  },
-  "sniperrifle": {
-    "category": "weapon",
-    "hash": 100416529,
-    "height": 3,
-    "label": "Sniper Rifle",
-    "weight": 5000,
-    "width": 4
-  },
-  "snowball": {
-    "category": "throwable",
-    "hash": 126349499,
-    "label": "Snowball",
-    "weight": 5
-  },
-  "snowlauncher": {
-    "category": "weapon",
-    "hash": 62870901,
-    "height": 2,
-    "label": "Snowball Launcher",
-    "weight": 1000,
-    "width": 5
-  },
-  "snspistol": {
-    "category": "weapon",
-    "hash": -1076751822,
-    "label": "SNS Pistol",
-    "weight": 465,
-    "width": 2
-  },
-  "snspistolmk2": {
-    "category": "weapon",
-    "hash": -2009644972,
-    "label": "SNS Pistol Mk II",
-    "weight": 465,
-    "width": 2
-  },
-  "specialcarbine": {
-    "category": "weapon",
-    "hash": -1063057011,
-    "height": 2,
-    "label": "Special Carbine",
-    "weight": 3000,
-    "width": 4
-  },
-  "specialcarbinemk2": {
-    "category": "weapon",
-    "hash": -1768145561,
-    "height": 2,
-    "label": "Special Carbine Mk II",
-    "weight": 3370,
-    "width": 4
-  },
-  "stickybomb": {
-    "category": "throwable",
-    "hash": 741814745,
-    "label": "Sticky Bomb",
-    "weight": 1000
-  },
-  "stonehatchet": {
-    "category": "weapon",
-    "hash": 940833800,
-    "label": "Stone Hatchet",
-    "weight": 800,
-    "width": 2
-  },
-  "strickler": {
-    "category": "weapon",
-    "hash": -1916886713,
-    "height": 2,
-    "label": "El Strickler",
-    "weight": 3800,
-    "width": 4
-  },
-  "stungun": {
-    "category": "weapon",
-    "hash": 911657153,
-    "label": "Stun Gun",
-    "weight": 227,
-    "width": 2
-  },
-  "stungunmp": {
-    "category": "weapon",
-    "hash": 1171102963,
-    "label": "Stun Gun",
-    "weight": 230,
-    "width": 2
-  },
-  "stunrod": {
-    "category": "weapon",
-    "hash": -624951259,
-    "height": 2,
-    "label": "The Shocker",
-    "weight": 1200
-  },
-  "switchblade": {
-    "category": "weapon",
-    "hash": -538741184,
-    "height": 2,
-    "label": "Switchblade",
-    "weight": 300
-  },
-  "tacticalrifle": {
-    "category": "weapon",
-    "hash": -774507221,
-    "height": 2,
-    "label": "Service Carbine",
-    "weight": 3400,
-    "width": 4
-  },
-  "tecpistol": {
-    "category": "weapon",
-    "hash": 350597077,
-    "label": "Tactical SMG",
-    "weight": 1500,
-    "width": 2
-  },
-  "vintagepistol": {
-    "category": "weapon",
-    "hash": 137902532,
-    "label": "Vintage Pistol",
-    "weight": 700,
-    "width": 2
-  },
-  "wrench": {
-    "category": "weapon",
-    "hash": 419712736,
-    "height": 2,
-    "label": "Pipe Wrench",
-    "weight": 2500
+    "stackSize": 1
   },
   "ped_component": {
     "category": "clothing"
@@ -936,14 +120,518 @@
   "ped_prop": {
     "category": "clothing"
   },
-  "paperbag": {
-    "category": "container",
-    "label": "Paper bag",
-    "weight": 1,
-    "inventory": {
-      "weight": 1000,
-      "height": 2,
-      "width": 2
+  "phone": {
+    "label": "Phone",
+    "weight": 190,
+    "stackSize": 1,
+    "consume": 0
+  },
+  "radio": {
+    "label": "Radio",
+    "weight": 1000,
+    "consume": 0
+  },
+  "scrapmetal": {
+    "label": "Scrap Metal",
+    "weight": 80
+  },
+  "sprunk": {
+    "label": "Sprunk",
+    "weight": 350,
+    "consume": 1,
+    "client": {
+      "usetime": 2500,
+      "notification": "You quenched your thirst with a Sprunk"
     }
+  },
+  "water": {
+    "label": "Water",
+    "weight": 500,
+    "consume": 1,
+    "client": {
+      "usetime": 2500,
+      "notification": "You drank some water"
+    }
+  },
+  "testburger": {
+    "label": "Why were the burger and fries running?",
+    "weight": 220,
+    "degrade": 60,
+    "consume": 0.3
+  },
+  "panties": {
+    "label": "Knickers",
+    "weight": 10,
+    "consume": 0
+  },
+  "weaponlicense": {
+    "label": "Weapon License"
+  },
+  "lawyerpass": {
+    "label": "Lawyer Pass"
+  },
+  "jammer": {
+    "label": "Radio Jammer",
+    "weight": 10000
+  },
+  "radiocell": {
+    "label": "AAA Cells",
+    "weight": 1000
+  },
+  "advancedlockpick": {
+    "label": "Advanced Lockpick",
+    "weight": 500
+  },
+  "screwdriverset": {
+    "label": "Screwdriver Set",
+    "weight": 500
+  },
+  "electronickit": {
+    "label": "Electronic Kit",
+    "weight": 500
+  },
+  "cleaningkit": {
+    "label": "Cleaning Kit",
+    "weight": 500
+  },
+  "repairkit": {
+    "label": "Repair Kit",
+    "weight": 2500
+  },
+  "advancedrepairkit": {
+    "label": "Advanced Repair Kit",
+    "weight": 4000
+  },
+  "diamond_ring": {
+    "label": "Diamond",
+    "weight": 1500
+  },
+  "rolex": {
+    "label": "Golden Watch",
+    "weight": 1500
+  },
+  "goldbar": {
+    "label": "Gold Bar",
+    "weight": 1500
+  },
+  "goldchain": {
+    "label": "Golden Chain",
+    "weight": 1500
+  },
+  "crack_baggy": {
+    "label": "Crack Baggy",
+    "weight": 100
+  },
+  "cokebaggy": {
+    "label": "Bag of Coke",
+    "weight": 100
+  },
+  "coke_brick": {
+    "label": "Coke Brick",
+    "weight": 2000
+  },
+  "coke_small_brick": {
+    "label": "Coke Package",
+    "weight": 1000
+  },
+  "xtcbaggy": {
+    "label": "Bag of Ecstasy",
+    "weight": 100
+  },
+  "meth": {
+    "label": "Methamphetamine",
+    "weight": 100
+  },
+  "oxy": {
+    "label": "Oxycodone",
+    "weight": 100
+  },
+  "weed_ak47": {
+    "label": "AK47 2g",
+    "weight": 200
+  },
+  "weed_ak47_seed": {
+    "label": "AK47 Seed",
+    "weight": 1
+  },
+  "weed_skunk": {
+    "label": "Skunk 2g",
+    "weight": 200
+  },
+  "weed_skunk_seed": {
+    "label": "Skunk Seed",
+    "weight": 1
+  },
+  "weed_amnesia": {
+    "label": "Amnesia 2g",
+    "weight": 200
+  },
+  "weed_amnesia_seed": {
+    "label": "Amnesia Seed",
+    "weight": 1
+  },
+  "weed_og-kush": {
+    "label": "OGKush 2g",
+    "weight": 200
+  },
+  "weed_og-kush_seed": {
+    "label": "OGKush Seed",
+    "weight": 1
+  },
+  "weed_white-widow": {
+    "label": "OGKush 2g",
+    "weight": 200
+  },
+  "weed_white-widow_seed": {
+    "label": "White Widow Seed",
+    "weight": 1
+  },
+  "weed_purple-haze": {
+    "label": "Purple Haze 2g",
+    "weight": 200
+  },
+  "weed_purple-haze_seed": {
+    "label": "Purple Haze Seed",
+    "weight": 1
+  },
+  "weed_brick": {
+    "label": "Weed Brick",
+    "weight": 2000
+  },
+  "weed_nutrition": {
+    "label": "Plant Fertilizer",
+    "weight": 2000
+  },
+  "joint": {
+    "label": "Joint",
+    "weight": 200
+  },
+  "rolling_paper": {
+    "label": "Rolling Paper",
+    "weight": 0
+  },
+  "empty_weed_bag": {
+    "label": "Empty Weed Bag",
+    "weight": 0
+  },
+  "firstaid": {
+    "label": "First Aid",
+    "weight": 2500
+  },
+  "ifaks": {
+    "label": "Individual First Aid Kit",
+    "weight": 2500
+  },
+  "painkillers": {
+    "label": "Painkillers",
+    "weight": 400
+  },
+  "firework1": {
+    "label": "2Brothers",
+    "weight": 1000
+  },
+  "firework2": {
+    "label": "Poppelers",
+    "weight": 1000
+  },
+  "firework3": {
+    "label": "WipeOut",
+    "weight": 1000
+  },
+  "firework4": {
+    "label": "Weeping Willow",
+    "weight": 1000
+  },
+  "steel": {
+    "label": "Steel",
+    "weight": 100
+  },
+  "rubber": {
+    "label": "Rubber",
+    "weight": 100
+  },
+  "metalscrap": {
+    "label": "Metal Scrap",
+    "weight": 100
+  },
+  "iron": {
+    "label": "Iron",
+    "weight": 100
+  },
+  "copper": {
+    "label": "Copper",
+    "weight": 100
+  },
+  "aluminum": {
+    "label": "Aluminium",
+    "weight": 100
+  },
+  "plastic": {
+    "label": "Plastic",
+    "weight": 100
+  },
+  "glass": {
+    "label": "Glass",
+    "weight": 100
+  },
+  "gatecrack": {
+    "label": "Gatecrack",
+    "weight": 1000
+  },
+  "cryptostick": {
+    "label": "Crypto Stick",
+    "weight": 100
+  },
+  "trojan_usb": {
+    "label": "Trojan USB",
+    "weight": 100
+  },
+  "toaster": {
+    "label": "Toaster",
+    "weight": 5000
+  },
+  "small_tv": {
+    "label": "Small TV",
+    "weight": 100
+  },
+  "security_card_01": {
+    "label": "Security Card A",
+    "weight": 100
+  },
+  "security_card_02": {
+    "label": "Security Card B",
+    "weight": 100
+  },
+  "drill": {
+    "label": "Drill",
+    "weight": 5000
+  },
+  "thermite": {
+    "label": "Thermite",
+    "weight": 1000
+  },
+  "diving_gear": {
+    "label": "Diving Gear",
+    "weight": 30000
+  },
+  "diving_fill": {
+    "label": "Diving Tube",
+    "weight": 3000
+  },
+  "antipatharia_coral": {
+    "label": "Antipatharia",
+    "weight": 1000
+  },
+  "dendrogyra_coral": {
+    "label": "Dendrogyra",
+    "weight": 1000
+  },
+  "jerry_can": {
+    "label": "Jerrycan",
+    "weight": 3000
+  },
+  "nitrous": {
+    "label": "Nitrous",
+    "weight": 1000
+  },
+  "wine": {
+    "label": "Wine",
+    "weight": 500
+  },
+  "grape": {
+    "label": "Grape",
+    "weight": 10
+  },
+  "grapejuice": {
+    "label": "Grape Juice",
+    "weight": 200
+  },
+  "coffee": {
+    "label": "Coffee",
+    "weight": 200
+  },
+  "vodka": {
+    "label": "Vodka",
+    "weight": 500
+  },
+  "whiskey": {
+    "label": "Whiskey",
+    "weight": 200
+  },
+  "beer": {
+    "label": "Beer",
+    "weight": 200
+  },
+  "sandwich": {
+    "label": "Sandwich",
+    "weight": 200
+  },
+  "walking_stick": {
+    "label": "Walking Stick",
+    "weight": 1000
+  },
+  "lighter": {
+    "label": "Lighter",
+    "weight": 200
+  },
+  "binoculars": {
+    "label": "Binoculars",
+    "weight": 800
+  },
+  "stickynote": {
+    "label": "Sticky Note",
+    "weight": 0
+  },
+  "empty_evidence_bag": {
+    "label": "Empty Evidence Bag",
+    "weight": 200
+  },
+  "filled_evidence_bag": {
+    "label": "Filled Evidence Bag",
+    "weight": 200
+  },
+  "harness": {
+    "label": "Harness",
+    "weight": 200
+  },
+  "handcuffs": {
+    "label": "Handcuffs",
+    "weight": 200
+  },
+  "dufflebag": {
+    "category": "bag",
+    "label": "Duffle Bag",
+    "weight": 1500,
+    "height": 2,
+    "width": 1,
+    "itemLimit": 1,
+    "inventory": {
+      "weight": 50000,
+      "height": 6,
+      "width": 6
+    }
+  },
+  "heavypc": {
+    "category": "vest",
+    "label": "Heavy Plate Carrier",
+    "weight": 4000,
+    "stackSize": 1,
+    "consume": 0,
+    "width": 2,
+    "height": 2,
+    "plateType": "heavy",
+    "allowedPlates": ["heavyplate", "brokenplate"],
+    "inventory": {
+      "weight": 10000,
+      "width": 4,
+      "height": 2
+    },
+    "contextButtons": [
+      {
+        "buttonId": "open_vest",
+        "label": "Open Vest",
+        "icon": "hugeicons:box-01",
+        "action": "open"
+      }
+    ]
+  },
+  "lightpc": {
+    "category": "vest",
+    "label": "Light Plate Carrier",
+    "weight": 2500,
+    "stackSize": 1,
+    "consume": 0,
+    "width": 2,
+    "height": 2,
+    "plateType": "light",
+    "allowedPlates": ["lightplate", "brokenplate"],
+    "inventory": {
+      "weight": 10000,
+      "width": 4,
+      "height": 2
+    },
+    "contextButtons": [
+      {
+        "buttonId": "open_vest",
+        "label": "Open Vest",
+        "icon": "hugeicons:box-01",
+        "action": "open"
+      }
+    ]
+  },
+  "crim_heavypc": {
+    "category": "vest",
+    "label": "Tactical Plate Carrier",
+    "weight": 4500,
+    "stackSize": 1,
+    "consume": 0,
+    "width": 2,
+    "height": 2,
+    "plateType": "heavy",
+    "allowedPlates": ["heavyplate", "brokenplate"],
+    "inventory": {
+      "weight": 10000,
+      "width": 4,
+      "height": 2
+    },
+    "contextButtons": [
+      {
+        "buttonId": "open_vest",
+        "label": "Open Vest",
+        "icon": "hugeicons:box-01",
+        "action": "open"
+      }
+    ]
+  },
+  "crim_lightpc": {
+    "category": "vest",
+    "label": "Concealable Carrier",
+    "weight": 2000,
+    "stackSize": 1,
+    "consume": 0,
+    "width": 2,
+    "height": 2,
+    "plateType": "light",
+    "allowedPlates": ["lightplate", "brokenplate"],
+    "inventory": {
+      "weight": 10000,
+      "width": 4,
+      "height": 2
+    },
+    "contextButtons": [
+      {
+        "buttonId": "open_vest",
+        "label": "Open Vest",
+        "icon": "hugeicons:box-01",
+        "action": "open"
+      }
+    ]
+  },
+  "heavyplate": {
+    "category": "armorplate",
+    "label": "Heavy Armor Plate",
+    "weight": 2500,
+    "stackSize": 1,
+    "width": 2,
+    "height": 2,
+    "armorValue": 50
+  },
+  "lightplate": {
+    "category": "armorplate",
+    "label": "Light Armor Plate",
+    "weight": 1500,
+    "stackSize": 1,
+    "width": 2,
+    "height": 2,
+    "armorValue": 25
+  },
+  "brokenplate": {
+    "category": "armorplate",
+    "label": "Broken Armor Plate",
+    "weight": 1000,
+    "stackSize": 1,
+    "width": 2,
+    "height": 2,
+    "armorValue": 0
   }
 }

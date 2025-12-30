@@ -14,7 +14,8 @@ function outsideClick(e: MouseEvent) {
 <div class={cn("absolute w-full h-full hidden z-[52]", contextMenu.visible && "block")} onclick={outsideClick}>
   <div
     class={cn(
-      "bg-background/90 p-2 min-w-[120px] shadow-lg flex-col gap-2 absolute hidden z-[53]",
+      "bg-black/90 backdrop-blur-sm p-1.5 min-w-[140px] shadow-2xl flex-col gap-0.5 absolute hidden z-[53]",
+      "rounded-lg border border-white/10",
       contextMenu.visible && "flex",
     )}
     style={`top: ${contextMenu.y}px; left: ${contextMenu.x}px`}

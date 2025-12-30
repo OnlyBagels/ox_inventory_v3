@@ -1,6 +1,6 @@
 import { DatabaseSync } from 'node:sqlite';
 import type { InventoryItem, ItemProperties } from '@common/item';
-import { cache } from '@overextended/ox_lib';
+import { cache } from '@communityox/ox_lib';
 import { Inventory } from './inventory/class';
 
 const sqlite = new DatabaseSync(`${GetResourcePath(cache.resource)}/db.sqlite`);
@@ -38,6 +38,9 @@ const db = new (class Database {
   private _getInventoryItems = sqlite.prepare(
     'SELECT uniqueId, inventoryId, json(data) as data FROM inventory_items WHERE inventoryId = ?',
   );
+  private _getInventoryItemsByOwner = sqlite.prepare(
+    'SELECT uniqueId, inventoryId, json(data) as data FROM inventory_items WHERE inventoryId = ?',
+  );
   private _deleteInventoryItem = sqlite.prepare('DELETE FROM inventory_items WHERE uniqueId = ?');
   private _updateInventoryItem = sqlite.prepare(
     'INSERT INTO inventory_items (uniqueId, inventoryId, data) VALUES (?, ?, jsonb(?)) ON CONFLICT(uniqueId) DO UPDATE SET inventoryId = excluded.inventoryId, data = excluded.data',
@@ -62,16 +65,42 @@ const db = new (class Database {
     if (result) return { name: result.name, category: result.category, ...JSON.parse(result.data) };
   }
 
-  getInventoryItems(inventoryId: string): ItemProperties[] {
-    const results = this._getInventoryItems.all(inventoryId) as DbInventoryItem[];
+  getInventoryItems(inventoryId: string, alternateId?: string): ItemProperties[] {
+    console.log(`^3[ox_inventory:db] Loading items for inventoryId='${inventoryId}', alternateId='${alternateId}'`);
 
-    return results.map((result) => {
+    let results = this._getInventoryItems.all(inventoryId) as DbInventoryItem[];
+    console.log(`^3[ox_inventory:db] Primary query returned ${results.length} items^0`);
+
+    // If no items found and alternateId provided (e.g., for migrated player inventories),
+    // try loading from the alternate ID and update them to use the new inventoryId
+    if (results.length === 0 && alternateId) {
+      results = this._getInventoryItemsByOwner.all(alternateId) as DbInventoryItem[];
+      console.log(`^3[ox_inventory:db] Alternate query returned ${results.length} items^0`);
+
+      // Update migrated items to use the correct inventoryId
+      if (results.length > 0) {
+        console.log(`[ox_inventory] Migrating ${results.length} items from '${alternateId}' to '${inventoryId}'`);
+        for (const result of results) {
+          this._updateInventoryItem.run(result.uniqueId, inventoryId, result.data);
+          result.inventoryId = inventoryId;
+        }
+      }
+    }
+
+    const parsedResults = results.map((result) => {
       const obj = JSON.parse(result.data);
       obj.uniqueId = result.uniqueId;
       obj.inventoryId = result.inventoryId;
 
       return obj;
     });
+
+    // Debug: show what items we found
+    for (const item of parsedResults) {
+      console.log(`^3[ox_inventory:db]   - Found item: ${item.name} x${item.quantity || 1} (uniqueId=${item.uniqueId})^0`);
+    }
+
+    return parsedResults;
   }
 
   updateInventoryItem(item: Partial<InventoryItem>): number {
@@ -120,3 +149,75 @@ exports('createItem', ({ name, category = null, ...data }: ItemProperties) => {
     return false;
   }
 });
+
+// Database cleanup utilities
+
+/**
+ * Get all orphaned items (items with NULL or invalid inventoryId patterns like player:1, player:2)
+ */
+export function getOrphanedItems(): { uniqueId: number; inventoryId: string | null; name: string; quantity: number }[] {
+  const query = sqlite.prepare(`
+    SELECT uniqueId, inventoryId, json_extract(data, '$.name') as name, json_extract(data, '$.quantity') as quantity
+    FROM inventory_items
+    WHERE inventoryId IS NULL
+       OR inventoryId LIKE 'player:%'
+       AND inventoryId NOT LIKE 'player:_________'
+       AND length(replace(inventoryId, 'player:', '')) < 5
+  `);
+
+  return query.all() as { uniqueId: number; inventoryId: string | null; name: string; quantity: number }[];
+}
+
+/**
+ * Delete orphaned items from the database
+ */
+export function deleteOrphanedItems(): number {
+  const query = sqlite.prepare(`
+    DELETE FROM inventory_items
+    WHERE inventoryId IS NULL
+       OR (inventoryId LIKE 'player:%'
+           AND inventoryId NOT LIKE 'player:_________'
+           AND length(replace(inventoryId, 'player:', '')) < 5)
+  `);
+
+  return query.run().changes;
+}
+
+/**
+ * Find and clean up duplicate items within the same inventory
+ * Keeps only the item with the highest uniqueId for each name+slot combination
+ */
+export function cleanupDuplicateItems(inventoryId: string): { deleted: number; kept: number } {
+  // First, find all items in this inventory
+  const allItems = sqlite.prepare(`
+    SELECT uniqueId, inventoryId, json_extract(data, '$.name') as name,
+           json_extract(data, '$.quantity') as quantity,
+           json_extract(data, '$.anchorSlot') as anchorSlot
+    FROM inventory_items
+    WHERE inventoryId = ?
+    ORDER BY uniqueId DESC
+  `).all(inventoryId) as { uniqueId: number; inventoryId: string; name: string; quantity: number; anchorSlot: number }[];
+
+  // Group by name+anchorSlot to find duplicates
+  const seen = new Map<string, number>();
+  const duplicates: number[] = [];
+
+  for (const item of allItems) {
+    const key = `${item.name}:${item.anchorSlot}`;
+
+    if (seen.has(key)) {
+      // This is a duplicate - mark for deletion (we keep the first one we saw, which is highest uniqueId)
+      duplicates.push(item.uniqueId);
+    } else {
+      seen.set(key, item.uniqueId);
+    }
+  }
+
+  // Delete duplicates
+  if (duplicates.length > 0) {
+    const placeholders = duplicates.map(() => '?').join(',');
+    sqlite.prepare(`DELETE FROM inventory_items WHERE uniqueId IN (${placeholders})`).run(...duplicates);
+  }
+
+  return { deleted: duplicates.length, kept: seen.size };
+}

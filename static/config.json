@@ -1,15 +1,43 @@
 {
+  "Framework": null,
+  "TrimPlates": true,
+  "Police": ["police", "sheriff"],
+  "Death_DropItems": false,
+  "Hotbar": {
+    "Enabled": true,
+    "Keybinds": {
+      "Primary": "1",
+      "Secondary": "2",
+      "Melee": "3",
+      "Utility1": "4",
+      "Utility2": "5",
+      "Bag": "6",
+      "Armor": "7",
+      "Toggle": "Z"
+    },
+    "Slots": {
+      "Primary": { "Width": 5, "Height": 2, "Label": "Primary", "Categories": ["weapon"] },
+      "Secondary": { "Width": 2, "Height": 1, "Label": "Sidearm", "Categories": ["weapon"] },
+      "Melee": { "Width": 1, "Height": 2, "Label": "Melee", "Categories": ["weapon"] },
+      "Utility1": { "Width": 1, "Height": 1, "Label": "Item" },
+      "Utility2": { "Width": 1, "Height": 1, "Label": "Item" },
+      "Bag": { "Width": 1, "Height": 2, "Label": "Bag", "Categories": ["bag"] },
+      "Armor": { "Width": 2, "Height": 2, "Label": "Vest", "Categories": ["vest"] }
+    }
+  },
   "Drop": {
     "Height": 4,
     "MaxWeight": 50000,
     "Model": "prop_med_bag_01b",
     "UseTargeting": true,
-    "Width": 8
+    "Width": 8,
+    "CleanupInterval": 60000,
+    "UseProps": true
   },
   "Inventory": {
     "BlurScreen": true,
     "EnableKeys": [
-      249
+      30, 31, 32, 33, 21, 22, 36, 249
     ],
     "ImagePath": "./images",
     "ItemNotifications": true,
@@ -17,11 +45,12 @@
     "SlotSize": "medium"
   },
   "LogLevel": "error",
+  "Debug": false,
   "Player": {
-    "Height": 8,
+    "Height": 7,
     "MaxWeight": 50000,
     "UseTargeting": true,
-    "Width": 6
+    "Width": 11
   },
   "SuppressPickups": true,
   "Vehicle": {
@@ -244,6 +273,8 @@
     "CheckModelMismatch": true,
     "DisarmNotification": true,
     "Enabled": true,
+    "Animations": true,
+    "DurabilityPerShot": 0.03,
     "IgnoreWeapons": [
       "WEAPON_UNARMED",
       "WEAPON_HANDCUFFS",
@@ -251,5 +282,23 @@
       "OBJECT",
       "WEAPON_HOSE"
     ]
+  },
+  "Shop": {
+    "CreateBlips": true,
+    "CreateTargets": true,
+    "PriceFluctuation": {
+      "Enabled": true,
+      "MinMultiplier": 0.8,
+      "MaxMultiplier": 1.2
+    },
+    "PriceDegradation": {
+      "Enabled": true,
+      "DecayRate": 0.01,
+      "MaxDecay": 0.25
+    },
+    "RandomStock": {
+      "DefaultRestockIntervalMs": 7200000
+    },
+    "RegisterWeaponsToMDT": true
   }
 }

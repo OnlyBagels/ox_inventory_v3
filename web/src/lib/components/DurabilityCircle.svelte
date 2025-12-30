@@ -4,22 +4,36 @@ interface DurabilityCircleProps {
 }
 
 const { durability }: DurabilityCircleProps = $props();
+
+// Calculate color based on durability percentage
+const getColor = (d: number) => {
+  if (d > 60) return '#22c55e'; // green
+  if (d > 30) return '#eab308'; // yellow
+  return '#ef4444'; // red
+};
 </script>
 
-<svg class="absolute bottom-1 left-1 w-5 h-5 -rotate-90" viewBox="0 0 36 36">
-  <circle class="text-gray-400 opacity-20" stroke="currentColor" stroke-width="6" fill="none" r="12" cx="18" cy="18" />
-
-  {#if durability && durability !== 0}
+{#if durability !== undefined && durability > 0}
+  <svg class="w-4 h-4 -rotate-90" viewBox="0 0 36 36">
+    <!-- Background circle -->
     <circle
-      class="text-green-500"
-      stroke="currentColor"
-      stroke-width="6"
-      stroke-dasharray={`${(durability / 100) * (2 * Math.PI * 12)}, ${2 * Math.PI * 12}`}
+      stroke="rgba(255,255,255,0.15)"
+      stroke-width="5"
       fill="none"
-      r="12"
+      r="14"
       cx="18"
       cy="18"
-      style={`stroke: hsl(${durability * 1.1}, 100%, 50%)`}
     />
-  {/if}
-</svg>
+    <!-- Progress circle -->
+    <circle
+      stroke={getColor(durability)}
+      stroke-width="5"
+      stroke-dasharray={`${(durability / 100) * (2 * Math.PI * 14)}, ${2 * Math.PI * 14}`}
+      stroke-linecap="round"
+      fill="none"
+      r="14"
+      cx="18"
+      cy="18"
+    />
+  </svg>
+{/if}

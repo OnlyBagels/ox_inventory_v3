@@ -1,7 +1,7 @@
 //@ts-check
 
 import { exists, exec, getFiles } from './utils.js';
-import { createBuilder, createFxmanifest } from '@overextended/fx-utils';
+import { createBuilder, createFxmanifest } from '@communityox/fx-utils';
 
 const watch = process.argv.includes('--watch');
 const web = await exists('./web');
@@ -35,7 +35,7 @@ createBuilder(
     await createFxmanifest({
       client_scripts: [outfiles.client],
       server_scripts: [outfiles.server],
-      files: ['locales/*.json', ...files],
+      files: ['locales/*.json', 'data/*.json', 'web/images/*.png', 'web/images/*.PNG', ...files],
       dependencies: ['/server:13019', '/onesync', 'oxmysql', 'ox_lib', 'ox_target'],
       metadata: {
         ui_page: 'dist/web/index.html',

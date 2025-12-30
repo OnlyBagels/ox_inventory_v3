@@ -1,0 +1,1284 @@
+{
+  "Weapons": {
+    "WEAPON_ACIDPACKAGE": {
+      "label": "Acid Package",
+      "weight": 120,
+      "throwable": true,
+      "model": "W_AM_Papers_XM3"
+    },
+    "WEAPON_ADVANCEDRIFLE": {
+      "label": "Advanced Rifle",
+      "weight": 3100,
+      "durability": 0.03,
+      "ammoname": "ammo-rifle",
+      "model": "W_AR_ADVANCEDRIFLE",
+      "firemode": "auto",
+      "damage": 1.0
+    },
+    "WEAPON_APPISTOL": {
+      "label": "AP Pistol",
+      "weight": 1400,
+      "durability": 0.1,
+      "ammoname": "ammo-9",
+      "model": "W_PI_APPISTOL",
+      "firemode": "auto",
+      "damage": 0.8
+    },
+    "WEAPON_ASSAULTRIFLE": {
+      "label": "Assault Rifle",
+      "weight": 4500,
+      "durability": 0.03,
+      "ammoname": "ammo-rifle2",
+      "model": "W_AR_ASSAULTRIFLE",
+      "firemode": "auto"
+    },
+    "WEAPON_ASSAULTRIFLE_MK2": {
+      "label": "Assault Rifle MK2",
+      "weight": 2950,
+      "durability": 0.03,
+      "ammoname": "ammo-rifle2",
+      "model": "w_ar_assaultriflemk2",
+      "firemode": "auto"
+    },
+    "WEAPON_ASSAULTSHOTGUN": {
+      "label": "Assault Shotgun",
+      "weight": 5200,
+      "durability": 0.05,
+      "ammoname": "ammo-shotgun",
+      "model": "w_sg_assaultshotgun",
+      "firemode": "auto"
+    },
+    "WEAPON_ASSAULTSMG": {
+      "label": "Assault SMG",
+      "weight": 2900,
+      "durability": 0.05,
+      "ammoname": "ammo-rifle",
+      "model": "w_sb_assaultsmg",
+      "firemode": "auto"
+    },
+    "WEAPON_AUTOSHOTGUN": {
+      "label": "Sweeper Shotgun",
+      "weight": 4400,
+      "durability": 0.05,
+      "ammoname": "ammo-shotgun",
+      "model": "w_sg_sweeper",
+      "firemode": "auto"
+    },
+    "WEAPON_BALL": {
+      "label": "Ball",
+      "weight": 149,
+      "throwable": true,
+      "model": "w_am_baseball"
+    },
+    "WEAPON_BAT": {
+      "label": "Bat",
+      "weight": 1134,
+      "durability": 0.1,
+      "model": "w_me_bat"
+    },
+    "WEAPON_BATTLEAXE": {
+      "label": "Battle Axe",
+      "weight": 6500,
+      "durability": 0.1,
+      "model": "w_me_battleaxe"
+    },
+    "WEAPON_BATTLERIFLE": {
+      "label": "Battle Rifle",
+      "weight": 3300,
+      "durability": 0.03,
+      "ammoname": "ammo-rifle2",
+      "model": "W_SL_BattleRifle_M32",
+      "firemode": "auto"
+    },
+    "WEAPON_BOTTLE": {
+      "label": "Bottle",
+      "weight": 350,
+      "durability": 0.1,
+      "model": "w_me_bottle"
+    },
+    "WEAPON_BULLPUPRIFLE": {
+      "label": "Bullpup Rifle",
+      "weight": 2900,
+      "durability": 0.03,
+      "ammoname": "ammo-rifle",
+      "model": "w_ar_bullpuprifle",
+      "firemode": "auto"
+    },
+    "WEAPON_BULLPUPRIFLE_MK2": {
+      "label": "Bullpup Rifle MK2",
+      "weight": 2900,
+      "durability": 0.03,
+      "ammoname": "ammo-rifle",
+      "model": "w_ar_bullpupriflemk2",
+      "firemode": "auto"
+    },
+    "WEAPON_BULLPUPSHOTGUN": {
+      "label": "Bullpup Shotgun",
+      "weight": 3100,
+      "durability": 0.2,
+      "ammoname": "ammo-shotgun",
+      "model": "w_sg_bullpupshotgun",
+      "firemode": "semi"
+    },
+    "WEAPON_BZGAS": {
+      "label": "BZ Gas",
+      "weight": 600,
+      "throwable": true,
+      "model": "w_ex_grenadesmoke"
+    },
+    "WEAPON_CANDYCANE": {
+      "label": "Candy Cane",
+      "weight": 85,
+      "durability": 0.1,
+      "model": "W_ME_Candy_XM3"
+    },
+    "WEAPON_CARBINERIFLE": {
+      "label": "Carbine Rifle",
+      "weight": 3100,
+      "durability": 0.03,
+      "ammoname": "ammo-rifle",
+      "model": "W_AR_CARBINERIFLE",
+      "firemode": "auto"
+    },
+    "WEAPON_CARBINERIFLE_MK2": {
+      "label": "Carbine Rifle MK2",
+      "weight": 3000,
+      "durability": 0.03,
+      "ammoname": "ammo-rifle",
+      "model": "w_ar_carbineriflemk2",
+      "firemode": "auto"
+    },
+    "WEAPON_CERAMICPISTOL": {
+      "label": "Ceramic Pistol",
+      "weight": 800,
+      "durability": 0.2,
+      "ammoname": "ammo-9",
+      "model": "w_pi_ceramic_pistol",
+      "firemode": "semi"
+    },
+    "WEAPON_COMBATMG": {
+      "label": "Combat MG",
+      "weight": 7500,
+      "durability": 0.02,
+      "ammoname": "ammo-rifle",
+      "model": "w_mg_combatmg",
+      "firemode": "auto"
+    },
+    "WEAPON_COMBATMG_MK2": {
+      "label": "Combat MG MK2",
+      "weight": 8000,
+      "durability": 0.02,
+      "ammoname": "ammo-rifle2",
+      "model": "w_mg_combatmgmk2",
+      "firemode": "auto"
+    },
+    "WEAPON_COMBATPDW": {
+      "label": "Combat PDW",
+      "weight": 2300,
+      "durability": 0.1,
+      "ammoname": "ammo-9",
+      "model": "W_SB_PDW",
+      "firemode": "auto"
+    },
+    "WEAPON_COMBATPISTOL": {
+      "label": "Combat Pistol",
+      "weight": 785,
+      "durability": 0.2,
+      "ammoname": "ammo-9",
+      "model": "W_PI_COMBATPISTOL",
+      "firemode": "semi"
+    },
+    "WEAPON_COMBATSHOTGUN": {
+      "label": "Combat Shotgun",
+      "weight": 4400,
+      "durability": 0.2,
+      "ammoname": "ammo-shotgun",
+      "model": "w_sg_pumpshotgunh4",
+      "firemode": "semi"
+    },
+    "WEAPON_COMPACTLAUNCHER": {
+      "label": "Compact Grenade Launcher",
+      "weight": 2500,
+      "durability": 0.05,
+      "ammoname": "ammo-grenade",
+      "model": "w_lr_compactgl"
+    },
+    "WEAPON_COMPACTRIFLE": {
+      "label": "Compact Rifle",
+      "weight": 3600,
+      "durability": 0.05,
+      "ammoname": "ammo-rifle2",
+      "model": "w_ar_assaultrifle_smg",
+      "firemode": "auto"
+    },
+    "WEAPON_CROWBAR": {
+      "label": "Crowbar",
+      "weight": 2500,
+      "durability": 0.1,
+      "model": "w_me_crowbar"
+    },
+    "WEAPON_DAGGER": {
+      "label": "Dagger",
+      "weight": 800,
+      "durability": 0.1,
+      "model": "w_me_dagger"
+    },
+    "WEAPON_DBSHOTGUN": {
+      "label": "Double Barrel Shotgun",
+      "weight": 3175,
+      "durability": 0.4,
+      "ammoname": "ammo-shotgun",
+      "model": "w_sg_doublebarrel",
+      "firemode": "semi"
+    },
+    "WEAPON_DOUBLEACTION": {
+      "label": "Double Action Revolver",
+      "weight": 940,
+      "durability": 0.2,
+      "ammoname": "ammo-38",
+      "model": "w_pi_wep1_gun",
+      "firemode": "semi"
+    },
+    "WEAPON_EMPLAUNCHER": {
+      "label": "Compact EMP Launcher",
+      "weight": 2750,
+      "durability": 0.2,
+      "ammoname": "ammo-emp",
+      "model": "w_lr_compactml"
+    },
+    "WEAPON_FERTILIZERCAN": {
+      "label": "Fertilizer Can",
+      "weight": 12000,
+      "model": "W_AM_Jerrycan_SF"
+    },
+    "WEAPON_FIREEXTINGUISHER": {
+      "label": "Fire Extinguisher",
+      "weight": 8616,
+      "durability": 0.006,
+      "model": "w_am_fire_exting"
+    },
+    "WEAPON_FIREWORK": {
+      "label": "Firework Launcher",
+      "weight": 1000,
+      "durability": 0.5,
+      "ammoname": "ammo-firework",
+      "model": "w_lr_firework"
+    },
+    "WEAPON_FLARE": {
+      "label": "Flare",
+      "weight": 250,
+      "throwable": true,
+      "model": "w_am_flare"
+    },
+    "WEAPON_FLAREGUN": {
+      "label": "Flare Gun",
+      "weight": 1000,
+      "durability": 0.5,
+      "ammoname": "ammo-flare",
+      "model": "w_pi_flaregun",
+      "firemode": "semi"
+    },
+    "WEAPON_FLASHLIGHT": {
+      "label": "Flashlight",
+      "weight": 125,
+      "durability": 0.1,
+      "model": "w_me_flashlight"
+    },
+    "WEAPON_GADGETPISTOL": {
+      "label": "Perico Pistol",
+      "weight": 1750,
+      "durability": 0.1,
+      "ammoname": "ammo-9",
+      "model": "w_pi_singleshoth4",
+      "firemode": "semi"
+    },
+    "WEAPON_GOLFCLUB": {
+      "label": "Golf Club",
+      "weight": 330,
+      "durability": 0.1,
+      "model": "w_me_gclub"
+    },
+    "WEAPON_GRENADE": {
+      "label": "Grenade",
+      "weight": 400,
+      "throwable": true,
+      "model": "w_ex_grenadefrag"
+    },
+    "WEAPON_GRENADELAUNCHER": {
+      "label": "Grenade Launcher",
+      "weight": 6500,
+      "durability": 0.05,
+      "ammoname": "ammo-grenade",
+      "model": "w_lr_grenadelauncher"
+    },
+    "WEAPON_GRENADELAUNCHER_SMOKE": {
+      "label": "Tear Gas Launcher",
+      "weight": 6000,
+      "durability": 0.05,
+      "ammoname": "ammo-grenade",
+      "model": "w_lr_grenadelauncher"
+    },
+    "WEAPON_GUSENBERG": {
+      "label": "Gusenberg",
+      "weight": 4900,
+      "durability": 0.04,
+      "ammoname": "ammo-45",
+      "model": "w_sb_gusenberg",
+      "firemode": "auto"
+    },
+    "WEAPON_HACKINGDEVICE": {
+      "label": "Hacking Device",
+      "weight": 500,
+      "model": "W_AM_HackDevice_M32"
+    },
+    "WEAPON_HAMMER": {
+      "label": "Hammer",
+      "weight": 1200,
+      "durability": 0.1,
+      "model": "w_me_hammer"
+    },
+    "WEAPON_HATCHET": {
+      "label": "Hatchet",
+      "weight": 1000,
+      "durability": 0.1,
+      "model": "w_me_hatchet"
+    },
+    "WEAPON_HAZARDCAN": {
+      "label": "Hazardous Jerry Can",
+      "weight": 12000,
+      "model": "w_ch_jerrycan"
+    },
+    "WEAPON_HEAVYPISTOL": {
+      "label": "Heavy Pistol",
+      "weight": 1100,
+      "durability": 0.2,
+      "ammoname": "ammo-45",
+      "model": "w_pi_heavypistol",
+      "firemode": "semi"
+    },
+    "WEAPON_HEAVYRIFLE": {
+      "label": "Heavy Rifle",
+      "weight": 3300,
+      "durability": 0.2,
+      "ammoname": "ammo-rifle",
+      "model": "w_ar_heavyrifleh",
+      "firemode": "auto"
+    },
+    "WEAPON_HEAVYSHOTGUN": {
+      "label": "Heavy Shotgun",
+      "weight": 3600,
+      "durability": 0.1,
+      "ammoname": "ammo-shotgun",
+      "model": "w_sg_heavyshotgun",
+      "firemode": "semi"
+    },
+    "WEAPON_HEAVYSNIPER": {
+      "label": "Heavy Sniper",
+      "weight": 12700,
+      "durability": 0.5,
+      "ammoname": "ammo-heavysniper",
+      "model": "w_sr_heavysniper",
+      "firemode": "semi"
+    },
+    "WEAPON_HEAVYSNIPER_MK2": {
+      "label": "Heavy Sniper MK2",
+      "weight": 14000,
+      "durability": 0.5,
+      "ammoname": "ammo-heavysniper",
+      "model": "w_sr_heavysnipermk2",
+      "firemode": "semi"
+    },
+    "WEAPON_HOMINGLAUNCHER": {
+      "label": "Homing Launcher",
+      "weight": 10000,
+      "durability": 0.6,
+      "ammoname": "ammo-rocket",
+      "model": "w_lr_homing"
+    },
+    "WEAPON_KNIFE": {
+      "label": "Knife",
+      "weight": 300,
+      "durability": 0.1,
+      "model": "w_me_knife_01"
+    },
+    "WEAPON_KNUCKLE": {
+      "label": "Knuckle Dusters",
+      "weight": 300,
+      "durability": 0.1,
+      "model": "W_ME_Knuckle"
+    },
+    "WEAPON_MACHETE": {
+      "label": "Machete",
+      "weight": 1000,
+      "durability": 0.1,
+      "model": "w_me_machette_lr"
+    },
+    "WEAPON_MACHINEPISTOL": {
+      "label": "Machine Pistol",
+      "weight": 1400,
+      "durability": 0.05,
+      "ammoname": "ammo-9",
+      "model": "w_sb_compactsmg",
+      "firemode": "auto"
+    },
+    "WEAPON_MARKSMANPISTOL": {
+      "label": "Marksman Pistol",
+      "weight": 1588,
+      "durability": 0.5,
+      "ammoname": "ammo-22",
+      "model": "W_PI_SingleShot",
+      "firemode": "semi"
+    },
+    "WEAPON_MARKSMANRIFLE": {
+      "label": "Marksman Rifle",
+      "weight": 7500,
+      "durability": 0.4,
+      "ammoname": "ammo-sniper",
+      "model": "w_sr_marksmanrifle",
+      "firemode": "semi"
+    },
+    "WEAPON_MARKSMANRIFLE_MK2": {
+      "label": "Marksman Rifle MK2",
+      "weight": 4000,
+      "durability": 0.4,
+      "ammoname": "ammo-sniper",
+      "model": "w_sr_marksmanriflemk2",
+      "firemode": "semi"
+    },
+    "WEAPON_METALDETECTOR": {
+      "label": "Metal Detector",
+      "weight": 1200,
+      "model": "w_am_digiscanner_reh"
+    },
+    "WEAPON_MG": {
+      "label": "Machine Gun",
+      "weight": 9000,
+      "durability": 0.02,
+      "ammoname": "ammo-rifle2",
+      "model": "w_mg_mg",
+      "firemode": "auto"
+    },
+    "WEAPON_MICROSMG": {
+      "label": "Micro SMG",
+      "weight": 3000,
+      "durability": 0.1,
+      "ammoname": "ammo-45",
+      "model": "w_sb_microsmg",
+      "firemode": "auto"
+    },
+    "WEAPON_MILITARYRIFLE": {
+      "label": "Military Rifle",
+      "weight": 3600,
+      "durability": 0.03,
+      "ammoname": "ammo-rifle",
+      "model": "w_ar_bullpuprifleh4",
+      "firemode": "auto"
+    },
+    "WEAPON_MINIGUN": {
+      "label": "Minigun",
+      "weight": 38500,
+      "durability": 0.1,
+      "ammoname": "ammo-rifle2",
+      "model": "w_mg_minigun",
+      "firemode": "auto"
+    },
+    "WEAPON_MINISMG": {
+      "label": "Mini SMG",
+      "weight": 1270,
+      "durability": 0.05,
+      "ammoname": "ammo-9",
+      "model": "w_sb_minismg",
+      "firemode": "auto"
+    },
+    "WEAPON_MOLOTOV": {
+      "label": "Molotov",
+      "weight": 1800,
+      "throwable": true,
+      "model": "w_ex_molotov"
+    },
+    "WEAPON_MUSKET": {
+      "label": "Musket",
+      "weight": 4500,
+      "durability": 0.5,
+      "ammoname": "ammo-musket",
+      "model": "w_ar_musket",
+      "firemode": "semi"
+    },
+    "WEAPON_NAVYREVOLVER": {
+      "label": "Navy Revolver",
+      "weight": 4000,
+      "durability": 0.2,
+      "ammoname": "ammo-44",
+      "model": "w_pi_wep2_gun",
+      "firemode": "semi"
+    },
+    "WEAPON_NIGHTSTICK": {
+      "label": "Nightstick",
+      "weight": 1000,
+      "durability": 0.1,
+      "model": "w_me_nightstick"
+    },
+    "WEAPON_PETROLCAN": {
+      "label": "Jerry Can",
+      "weight": 4000,
+      "model": "w_am_jerrycan"
+    },
+    "WEAPON_PIPEBOMB": {
+      "label": "Pipe Bomb",
+      "weight": 1800,
+      "throwable": true,
+      "model": "w_ex_pipebomb"
+    },
+    "WEAPON_PISTOL": {
+      "label": "Pistol",
+      "weight": 1130,
+      "durability": 0.1,
+      "ammoname": "ammo-9",
+      "model": "W_PI_PISTOL",
+      "firemode": "semi"
+    },
+    "WEAPON_PISTOL_MK2": {
+      "label": "Pistol MK2",
+      "weight": 1000,
+      "durability": 0.5,
+      "ammoname": "ammo-9",
+      "model": "w_pi_pistolmk2",
+      "firemode": "semi"
+    },
+    "WEAPON_PISTOL50": {
+      "label": "Pistol .50",
+      "weight": 2000,
+      "durability": 0.1,
+      "ammoname": "ammo-50",
+      "model": "W_PI_PISTOL50",
+      "firemode": "semi"
+    },
+    "WEAPON_PISTOLXM3": {
+      "label": "WM 29 Pistol",
+      "weight": 969,
+      "durability": 0.2,
+      "ammoname": "ammo-9",
+      "model": "W_PI_Pistol_XM3",
+      "firemode": "semi"
+    },
+    "WEAPON_POOLCUE": {
+      "label": "Pool Cue",
+      "weight": 146,
+      "durability": 0.1,
+      "model": "w_me_poolcue"
+    },
+    "WEAPON_PRECISIONRIFLE": {
+      "label": "Precision Rifle",
+      "weight": 4800,
+      "durability": 0.4,
+      "ammoname": "ammo-sniper",
+      "model": "W_SR_PrecisionRifle_REH",
+      "firemode": "semi"
+    },
+    "WEAPON_PROXMINE": {
+      "label": "Proximity Mine",
+      "weight": 2500,
+      "throwable": true,
+      "model": "w_ex_apmine"
+    },
+    "WEAPON_PUMPSHOTGUN": {
+      "label": "Pump Shotgun",
+      "weight": 3400,
+      "durability": 0.1,
+      "ammoname": "ammo-shotgun",
+      "model": "w_sg_pumpshotgun",
+      "firemode": "semi"
+    },
+    "WEAPON_PUMPSHOTGUN_MK2": {
+      "label": "Pump Shotgun MK2",
+      "weight": 3200,
+      "durability": 0.1,
+      "ammoname": "ammo-shotgun",
+      "model": "w_sg_pumpshotgunmk2",
+      "firemode": "semi"
+    },
+    "WEAPON_RAILGUN": {
+      "label": "Railgun",
+      "weight": 3570,
+      "durability": 0.5,
+      "ammoname": "ammo-railgun",
+      "model": "w_ar_railgun",
+      "firemode": "semi"
+    },
+    "WEAPON_RAILGUNXM3": {
+      "label": "Railgun XM3",
+      "weight": 3570,
+      "durability": 0.5,
+      "ammoname": "ammo-railgun",
+      "model": "W_AR_RailGun_XM3",
+      "firemode": "semi"
+    },
+    "WEAPON_RAYCARBINE": {
+      "label": "Unholy Hellbringer",
+      "weight": 3620,
+      "durability": 0.2,
+      "ammoname": "ammo-laser",
+      "model": "w_ar_srifle",
+      "firemode": "auto"
+    },
+    "WEAPON_RAYMINIGUN": {
+      "label": "Widowmaker",
+      "weight": 7000,
+      "durability": 0.1,
+      "ammoname": "ammo-laser",
+      "model": "w_mg_sminigun",
+      "firemode": "auto"
+    },
+    "WEAPON_RAYPISTOL": {
+      "label": "Up-n-Atomizer",
+      "weight": 1540,
+      "durability": 0.5,
+      "model": "w_pi_raygun",
+      "firemode": "semi"
+    },
+    "WEAPON_REVOLVER": {
+      "label": "Revolver",
+      "weight": 2260,
+      "durability": 0.1,
+      "ammoname": "ammo-44",
+      "model": "w_pi_revolver",
+      "firemode": "semi"
+    },
+    "WEAPON_REVOLVER_MK2": {
+      "label": "Revolver MK2",
+      "weight": 2600,
+      "durability": 0.1,
+      "ammoname": "ammo-44",
+      "model": "w_pi_revolvermk2",
+      "firemode": "semi"
+    },
+    "WEAPON_RPG": {
+      "label": "RPG",
+      "weight": 5000,
+      "durability": 0.3,
+      "ammoname": "ammo-rocket",
+      "model": "w_lr_rpg"
+    },
+    "WEAPON_SAWNOFFSHOTGUN": {
+      "label": "Sawn Off Shotgun",
+      "weight": 2380,
+      "durability": 0.1,
+      "ammoname": "ammo-shotgun",
+      "model": "w_sg_sawnoff",
+      "firemode": "semi"
+    },
+    "WEAPON_SMG": {
+      "label": "SMG",
+      "weight": 3084,
+      "durability": 0.8,
+      "ammoname": "ammo-9",
+      "model": "w_sb_smg",
+      "firemode": "auto"
+    },
+    "WEAPON_SMG_MK2": {
+      "label": "SMG Mk2",
+      "weight": 2700,
+      "durability": 0.05,
+      "ammoname": "ammo-9",
+      "model": "w_sb_smgmk2",
+      "firemode": "auto"
+    },
+    "WEAPON_SMOKEGRENADE": {
+      "label": "Tear Gas",
+      "weight": 600,
+      "throwable": true,
+      "model": "w_ex_grenadesmoke"
+    },
+    "WEAPON_SNIPERRIFLE": {
+      "label": "Sniper Rifle",
+      "weight": 5000,
+      "durability": 0.5,
+      "ammoname": "ammo-sniper",
+      "model": "w_sr_sniperrifle",
+      "firemode": "semi"
+    },
+    "WEAPON_SNOWBALL": {
+      "label": "Snow Ball",
+      "weight": 5,
+      "throwable": true,
+      "model": "w_ex_snowball"
+    },
+    "WEAPON_SNOWLAUNCHER": {
+      "label": "Snowball Launcher",
+      "weight": 1000,
+      "durability": 0.03,
+      "ammoname": "WEAPON_SNOWBALL",
+      "model": "W_LR_CompactSL_M32",
+      "firemode": "semi"
+    },
+    "WEAPON_SNSPISTOL": {
+      "label": "SNS Pistol",
+      "weight": 465,
+      "durability": 0.1,
+      "ammoname": "ammo-45",
+      "model": "w_pi_sns_pistol",
+      "firemode": "semi"
+    },
+    "WEAPON_SNSPISTOL_MK2": {
+      "label": "SNS Pistol MK2",
+      "weight": 465,
+      "durability": 0.1,
+      "ammoname": "ammo-45",
+      "model": "w_pi_sns_pistolmk2",
+      "firemode": "semi"
+    },
+    "WEAPON_SPECIALCARBINE": {
+      "label": "Special Carbine",
+      "weight": 3000,
+      "durability": 0.03,
+      "ammoname": "ammo-rifle",
+      "model": "w_ar_specialcarbine",
+      "firemode": "auto"
+    },
+    "WEAPON_SPECIALCARBINE_MK2": {
+      "label": "Special Carbine MK2",
+      "weight": 3370,
+      "durability": 0.03,
+      "ammoname": "ammo-rifle",
+      "model": "w_ar_specialcarbinemk2",
+      "firemode": "auto"
+    },
+    "WEAPON_STICKYBOMB": {
+      "label": "Sticky Bomb",
+      "weight": 1000,
+      "throwable": true,
+      "model": "w_ex_pe"
+    },
+    "WEAPON_STONE_HATCHET": {
+      "label": "Stone Hatchet",
+      "weight": 800,
+      "durability": 0.1,
+      "model": "w_me_stonehatchet"
+    },
+    "WEAPON_STUNGUN": {
+      "label": "Tazer",
+      "weight": 227,
+      "durability": 0.1,
+      "model": "w_pi_stungun"
+    },
+    "WEAPON_STUNGUN_MP": {
+      "label": "Stun Gun",
+      "weight": 230,
+      "durability": 0.1,
+      "model": "w_pi_stungun"
+    },
+    "WEAPON_STUNROD": {
+      "label": "The Shocker",
+      "weight": 1200,
+      "durability": 0.1,
+      "model": "W_ME_Rod_M41"
+    },
+    "WEAPON_SWITCHBLADE": {
+      "label": "Switchblade",
+      "weight": 300,
+      "durability": 0.1,
+      "model": "w_me_switchblade"
+    },
+    "WEAPON_TACTICALRIFLE": {
+      "label": "Service Carbine",
+      "weight": 3400,
+      "durability": 0.03,
+      "ammoname": "ammo-rifle",
+      "model": "W_AR_CARBINERIFLE_REH",
+      "firemode": "auto"
+    },
+    "WEAPON_TEARGAS": {
+      "label": "Tear Gas",
+      "weight": 600,
+      "throwable": true,
+      "model": "w_ex_grenadesmoke"
+    },
+    "WEAPON_TECPISTOL": {
+      "label": "Tactical SMG",
+      "weight": 1500,
+      "durability": 0.075,
+      "ammoname": "ammo-9",
+      "model": "W_PI_PistolSMG_M31",
+      "firemode": "auto"
+    },
+    "WEAPON_VINTAGEPISTOL": {
+      "label": "Vintage Pistol",
+      "weight": 700,
+      "durability": 0.1,
+      "ammoname": "ammo-9",
+      "model": "w_pi_vintage_pistol",
+      "firemode": "semi"
+    },
+    "WEAPON_WRENCH": {
+      "label": "Wrench",
+      "weight": 2500,
+      "durability": 0.1,
+      "model": "w_me_wrench"
+    }
+  },
+  "Components": {
+    "at_flashlight": {
+      "label": "Tactical Flashlight",
+      "weight": 120,
+      "type": "flashlight"
+    },
+    "at_suppressor_light": {
+      "label": "Suppressor",
+      "weight": 280,
+      "type": "muzzle",
+      "image": "at_suppressor.png"
+    },
+    "at_suppressor_heavy": {
+      "label": "Tactical Suppressor",
+      "weight": 280,
+      "type": "muzzle",
+      "image": "at_suppressor.png"
+    },
+    "at_grip": {
+      "label": "Grip",
+      "type": "grip",
+      "weight": 280
+    },
+    "at_barrel": {
+      "label": "Heavy Barrel",
+      "type": "barrel",
+      "weight": 280
+    },
+    "at_clip_extended_pistol": {
+      "label": "Extended Pistol Clip",
+      "type": "magazine",
+      "weight": 280,
+      "image": "at_clip_extended.png"
+    },
+    "at_clip_extended_smg": {
+      "label": "Extended SMG Clip",
+      "type": "magazine",
+      "weight": 280,
+      "image": "at_clip_extended.png"
+    },
+    "at_clip_extended_shotgun": {
+      "label": "Extended Shotgun Clip",
+      "type": "magazine",
+      "weight": 280,
+      "image": "at_clip_extended2.png"
+    },
+    "at_clip_extended_rifle": {
+      "label": "Extended Rifle Clip",
+      "type": "magazine",
+      "weight": 280,
+      "image": "at_clip_extended2.png"
+    },
+    "at_clip_extended_mg": {
+      "label": "Extended MG Clip",
+      "type": "magazine",
+      "weight": 280,
+      "image": "at_clip_drum.png"
+    },
+    "at_clip_extended_sniper": {
+      "label": "Extended Sniper Clip",
+      "type": "magazine",
+      "weight": 280,
+      "image": "at_clip_extended2.png"
+    },
+    "at_clip_drum_smg": {
+      "label": "SMG Drum",
+      "type": "magazine",
+      "weight": 280,
+      "image": "at_clip_drum.png"
+    },
+    "at_clip_drum_shotgun": {
+      "label": "Shotgun Drum",
+      "type": "magazine",
+      "weight": 280,
+      "image": "at_clip_drum.png"
+    },
+    "at_clip_drum_rifle": {
+      "label": "Rifle Drum",
+      "type": "magazine",
+      "weight": 280,
+      "image": "at_clip_drum.png"
+    },
+    "at_compensator": {
+      "label": "Compensator",
+      "type": "muzzle",
+      "weight": 280
+    },
+    "at_scope_macro": {
+      "label": "Macro Scope",
+      "type": "sight",
+      "weight": 280
+    },
+    "at_scope_small": {
+      "label": "Small Scope",
+      "type": "sight",
+      "weight": 280
+    },
+    "at_scope_medium": {
+      "label": "Medium Scope",
+      "type": "sight",
+      "weight": 280
+    },
+    "at_scope_large": {
+      "label": "Large Scope",
+      "type": "sight",
+      "weight": 280
+    },
+    "at_scope_advanced": {
+      "label": "Advanced Scope",
+      "type": "sight",
+      "weight": 280
+    },
+    "at_scope_nv": {
+      "label": "NV Scope",
+      "type": "sight",
+      "weight": 420
+    },
+    "at_scope_thermal": {
+      "label": "Thermal Scope",
+      "type": "sight",
+      "weight": 420
+    },
+    "at_scope_holo": {
+      "label": "Holographic Sight",
+      "type": "sight",
+      "weight": 280
+    },
+    "at_muzzle_flat": {
+      "label": "Flat Muzzle",
+      "type": "muzzle",
+      "weight": 80
+    },
+    "at_muzzle_tactical": {
+      "label": "Tactical Muzzle",
+      "type": "muzzle",
+      "weight": 80
+    },
+    "at_muzzle_fat": {
+      "label": "Fat Muzzle",
+      "type": "muzzle",
+      "weight": 80
+    },
+    "at_muzzle_precision": {
+      "label": "Precision Muzzle",
+      "type": "muzzle",
+      "weight": 80
+    },
+    "at_muzzle_heavy": {
+      "label": "Heavy Muzzle",
+      "type": "muzzle",
+      "weight": 80
+    },
+    "at_muzzle_slanted": {
+      "label": "Slanted Muzzle",
+      "type": "muzzle",
+      "weight": 80
+    },
+    "at_muzzle_split": {
+      "label": "Split Muzzle",
+      "type": "muzzle",
+      "weight": 80
+    },
+    "at_muzzle_squared": {
+      "label": "Squared Muzzle",
+      "type": "muzzle",
+      "weight": 80
+    },
+    "at_muzzle_bell": {
+      "label": "Bell Muzzle",
+      "type": "muzzle",
+      "weight": 80
+    },
+    "at_skin_luxe": {
+      "label": "Luxury Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_wood": {
+      "label": "Wood Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_metal": {
+      "label": "Metal Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_pearl": {
+      "label": "Pearl Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_ballas": {
+      "label": "Ballas Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_diamond": {
+      "label": "Diamond Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_dollar": {
+      "label": "Dollar Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_hate": {
+      "label": "Hate Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_king": {
+      "label": "King Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_love": {
+      "label": "Love Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_pimp": {
+      "label": "Pimp Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_player": {
+      "label": "Player Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_vagos": {
+      "label": "Vagos Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_blagueurs": {
+      "label": "Blagueurs Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_splatter": {
+      "label": "Splatter Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_bulletholes": {
+      "label": "Bullet Holes Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_burgershot": {
+      "label": "Burger Shot Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_cluckinbell": {
+      "label": "Cluckin Bell Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_fatalincursion": {
+      "label": "Fatal Incursion Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_luchalibre": {
+      "label": "Lucha Libre Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_trippy": {
+      "label": "Trippy Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_tiedye": {
+      "label": "Tie-Dye Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_wall": {
+      "label": "Wall Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_vip": {
+      "label": "VIP Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_bodyguard": {
+      "label": "Bodyguard Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_festive": {
+      "label": "Festive Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_security": {
+      "label": "Security Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_camo": {
+      "label": "Camo Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_brushstroke": {
+      "label": "Brushstroke Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_woodland": {
+      "label": "Woodland Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_skull": {
+      "label": "Skull Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_sessanta": {
+      "label": "Sessanta Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_perseus": {
+      "label": "Perseus Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_leopard": {
+      "label": "Leopard Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_zebra": {
+      "label": "Zebra Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_geometric": {
+      "label": "Geometric Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_boom": {
+      "label": "Boom Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    },
+    "at_skin_patriotic": {
+      "label": "Patriotic Weapon Kit",
+      "type": "skin",
+      "weight": 50
+    }
+  },
+  "Ammo": {
+    "ammo-22": {
+      "label": ".22 Long Rifle",
+      "weight": 3,
+      "stackSize": 60
+    },
+    "ammo-38": {
+      "label": ".38 LC",
+      "weight": 15,
+      "stackSize": 60
+    },
+    "ammo-44": {
+      "label": ".44 Magnum",
+      "weight": 16,
+      "stackSize": 60
+    },
+    "ammo-45": {
+      "label": ".45 ACP",
+      "weight": 15,
+      "stackSize": 60
+    },
+    "ammo-50": {
+      "label": ".50 AE",
+      "weight": 45,
+      "stackSize": 60
+    },
+    "ammo-9": {
+      "label": "9mm",
+      "weight": 7,
+      "stackSize": 60
+    },
+    "ammo_9": {
+      "label": "9mm",
+      "weight": 7,
+      "stackSize": 60
+    },
+    "ammo-firework": {
+      "label": "Firework",
+      "weight": 200,
+      "stackSize": 60
+    },
+    "ammo-flare": {
+      "label": "Flare round",
+      "weight": 38,
+      "stackSize": 60
+    },
+    "ammo-grenade": {
+      "label": "40mm Explosive",
+      "weight": 400,
+      "stackSize": 60
+    },
+    "ammo-heavysniper": {
+      "label": ".50 BMG",
+      "weight": 51,
+      "stackSize": 60
+    },
+    "ammo-laser": {
+      "label": "Laser charge",
+      "weight": 1,
+      "stackSize": 60
+    },
+    "ammo-musket": {
+      "label": ".50 Ball",
+      "weight": 38,
+      "stackSize": 60
+    },
+    "ammo-railgun": {
+      "label": "Railgun charge",
+      "weight": 150,
+      "stackSize": 60
+    },
+    "ammo-rifle": {
+      "label": "5.56x45",
+      "weight": 4,
+      "stackSize": 60
+    },
+    "ammo-rifle2": {
+      "label": "7.62x39",
+      "weight": 8,
+      "stackSize": 60
+    },
+    "ammo-rocket": {
+      "label": "Rocket",
+      "weight": 500,
+      "stackSize": 60
+    },
+    "ammo-shotgun": {
+      "label": "12 Gauge",
+      "weight": 38,
+      "stackSize": 60
+    },
+    "ammo-sniper": {
+      "label": "7.62x51",
+      "weight": 9,
+      "stackSize": 60
+    },
+    "ammo-emp": {
+      "label": "EMP round",
+      "weight": 400,
+      "stackSize": 60
+    }
+  }
+}

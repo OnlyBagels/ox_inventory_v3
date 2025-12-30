@@ -10,6 +10,8 @@ export class InventoryState extends BaseInventory {
   }
 
   refreshSlots() {
+    // Recalculate weight before refreshing slots (like v2)
+    this.recalculateWeight();
     this.itemState.set(Array.from({ length: this.width * this.height }).map((_, index) => this.getItemInSlot(index)));
   }
 }
@@ -23,4 +25,6 @@ export interface DragItemType {
   rotate: InventoryItem['rotate'];
   icon: InventoryItem['icon'];
   quantity: InventoryItem['quantity'];
+  category?: string;
+  hash?: number;
 }

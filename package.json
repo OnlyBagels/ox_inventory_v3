@@ -1,7 +1,7 @@
 {
-  "name": "fivem-typescript-boilerplate",
+  "name": "ox_inventory",
   "author": "Overextended",
-  "version": "0.0.0",
+  "version": "2.42.1",
   "license": "",
   "description": "",
   "type": "module",
@@ -18,15 +18,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/overextended/fivem-typescript-boilerplate.git"
+    "url": "https://github.com/communityox/ox_inventory_v3.git"
   },
-  "bugs": "https://github.com/overextended/fivem-typescript-boilerplate/issues",
+  "bugs": "https://github.com/communityox/ox_inventory_v3/issues",
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@citizenfx/client": "latest",
     "@citizenfx/server": "latest",
     "@jgoz/esbuild-plugin-typecheck": "^4.0.3",
-    "@overextended/fx-utils": "^0.0.4",
+    "@communityox/fx-utils": "^0.0.4",
     "@sveltejs/vite-plugin-svelte": "^5.0.3",
     "@tsconfig/svelte": "^5.0.4",
     "@types/node": "^22.13.17",
@@ -51,9 +51,9 @@
     "@nativewrappers/common": "^0.0.90",
     "@nativewrappers/fivem": "^0.0.90",
     "@nativewrappers/server": "^0.0.90",
-    "@overextended/ox_core": "^1.5.1",
-    "@overextended/ox_lib": "^3.29.0",
-    "@overextended/oxmysql": "^1.4.2",
+    "@communityox/ox_core": "^1.5.1",
+    "@communityox/ox_lib": "^3.29.0",
+    "@communityox/oxmysql": "^1.4.2",
     "sync-fetch": "0.6.0-2"
   },
   "engines": {

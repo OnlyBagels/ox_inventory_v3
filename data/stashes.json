@@ -1,0 +1,64 @@
+{
+  "policelocker": {
+    "id": "policelocker",
+    "label": "Personal Locker",
+    "owner": true,
+    "width": 8,
+    "height": 9,
+    "maxWeight": 70000,
+    "groups": { "police": 0, "sheriff": 0 },
+    "coords": [452.3, -991.4, 30.7],
+    "distance": 3.0,
+    "target": {
+      "coords": [451.25, -994.28, 30.69],
+      "length": 1.2,
+      "width": 5.6,
+      "heading": 0,
+      "minZ": 29.49,
+      "maxZ": 32.09
+    }
+  },
+  "emslocker": {
+    "id": "emslocker",
+    "label": "Personal Locker",
+    "owner": true,
+    "width": 8,
+    "height": 9,
+    "maxWeight": 70000,
+    "groups": { "ambulance": 0 },
+    "coords": [301.3, -600.23, 43.28],
+    "distance": 3.0,
+    "target": {
+      "coords": [301.82, -600.99, 43.29],
+      "length": 0.6,
+      "width": 1.8,
+      "heading": 340,
+      "minZ": 43.34,
+      "maxZ": 44.74
+    }
+  },
+  "motel_room": {
+    "id": "motel_room",
+    "label": "Room Storage",
+    "owner": true,
+    "width": 6,
+    "height": 5,
+    "maxWeight": 30000
+  },
+  "apartment_storage": {
+    "id": "apartment_storage",
+    "label": "Apartment Storage",
+    "owner": true,
+    "width": 10,
+    "height": 10,
+    "maxWeight": 100000
+  },
+  "house_garage": {
+    "id": "house_garage",
+    "label": "Garage Storage",
+    "owner": true,
+    "width": 12,
+    "height": 8,
+    "maxWeight": 200000
+  }
+}

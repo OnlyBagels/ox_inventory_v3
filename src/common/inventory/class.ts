@@ -1,5 +1,5 @@
 import Config from '@common/config';
-import { GetInventoryItem, type InventoryItem, type ItemProperties } from '@common/item';
+import { GetInventoryItem, calculateInventoryWeight, type InventoryItem, type ItemProperties } from '@common/item';
 import type { Vector3 } from '@nativewrappers/common';
 
 export class BaseInventory {
@@ -70,10 +70,62 @@ export class BaseInventory {
     return true;
   }
 
-  /** Clears the itemCache and mapCache. */
+  /** Clears the itemCache and mapCache, and recalculates weight. */
   public invalidateCache() {
     this.#itemCache.length = 0;
     this.#mapCache.length = 0;
+  }
+
+  /**
+   * Cleans up orphaned slot references - removes slots that reference non-existent items
+   * or items that aren't actually in those slots.
+   */
+  public cleanupOrphanedSlots() {
+    const slotsToRemove: number[] = [];
+
+    for (const [slotIdStr, uniqueId] of Object.entries(this.items)) {
+      const slotId = parseInt(slotIdStr, 10);
+      const item = GetInventoryItem(uniqueId);
+
+      // Item doesn't exist - orphaned reference
+      if (!item) {
+        slotsToRemove.push(slotId);
+        continue;
+      }
+
+      // Item exists but isn't in this inventory
+      if (item.inventoryId !== this.inventoryId) {
+        slotsToRemove.push(slotId);
+        continue;
+      }
+
+      // Item exists but this slot isn't part of its occupied slots
+      const itemSlots = this.getItemSlots(item);
+      if (!itemSlots.includes(slotId)) {
+        slotsToRemove.push(slotId);
+      }
+    }
+
+    // Remove orphaned slots
+    for (const slotId of slotsToRemove) {
+      console.log(`[ox_inventory] Cleaning up orphaned slot ${slotId} (referenced item ${this.items[slotId]})`);
+      delete this.items[slotId];
+    }
+
+    if (slotsToRemove.length > 0) {
+      this.invalidateCache();
+      console.log(`[ox_inventory] Cleaned up ${slotsToRemove.length} orphaned slots in ${this.inventoryId}`);
+    }
+
+    return slotsToRemove.length;
+  }
+
+  /** Recalculates the total weight of all items in the inventory. */
+  public recalculateWeight() {
+    // Clear caches first to ensure fresh data
+    this.#itemCache.length = 0;
+    this.#mapCache.length = 0;
+    this.weight = calculateInventoryWeight(this.mapItems());
   }
 
   /**
@@ -118,10 +170,15 @@ export class BaseInventory {
 
   /**
    * Determines the slotIds that are occupied by an item.
-   * @returns An array containing the slotIds that hold the item.
+   * @returns An array containing the slotIds that hold the item, or empty array if item has no anchor.
    */
   public getItemSlots(item: InventoryItem) {
     const slots: number[] = [];
+
+    // Guard against undefined anchorSlot
+    if (item.anchorSlot === undefined || item.anchorSlot === null) {
+      return slots;
+    }
 
     for (let y = 0; y < item.height; y++) {
       const offset = item.anchorSlot + y * this.width;
@@ -146,10 +203,16 @@ export class BaseInventory {
 
       for (let x = 0; x < item.width; x++) {
         const slotId = offset + x;
-        const doesItemOverlap = this.items[slotId] && this.items[slotId] !== item.uniqueId;
+        const existingItemId = this.items[slotId];
+        // When moving an item within the same inventory, skip overlap check for its own slots
+        const isSameItem = existingItemId === item.uniqueId;
+        const doesItemOverlap = existingItemId && !isSameItem;
         const doesItemOverflow = Math.floor(slotId / this.width) !== Math.floor(offset / this.width);
 
-        if (doesItemOverlap || doesItemOverflow) return false;
+        if (doesItemOverlap || doesItemOverflow) {
+          if (Config.Debug) console.log(`[getSlotsForItem] FAILED at slot ${slotId}: existingItemId=${existingItemId}, item.uniqueId=${item.uniqueId}, isSameItem=${isSameItem}, overlap=${doesItemOverlap}, overflow=${doesItemOverflow}`);
+          return false;
+        }
 
         slots.push(slotId);
       }
@@ -171,14 +234,31 @@ export class BaseInventory {
     const existingItem = this.getItemInSlot(startSlot);
     quantity = quantity ? Math.max(1, Math.ceil(quantity)) : item.quantity;
 
+    // Weight check: calculate if the inventory can hold the item's weight
+    const itemWeight = item.weight ?? 0;
+    const addedWeight = itemWeight * quantity;
+
+    // If the item is already in this inventory, we don't need to add its weight again
+    const currentItemWeight = (item.inventoryId === this.inventoryId && item.anchorSlot !== undefined)
+      ? (itemWeight * item.quantity)
+      : 0;
+
+    const newTotalWeight = this.weight - currentItemWeight + addedWeight;
+
+    if (this.maxWeight > 0 && newTotalWeight > this.maxWeight) {
+      return false;
+    }
+
     // todo: totalQuantity > itemLimit
-    // todo: weight checks
 
     if (quantity > item.stackSize) return false;
 
+    // Check for stacking with existing item at target slot
+    // Skip this check if it's the same item (e.g., rotating in place)
     if (
       existingItem &&
       existingItem.anchorSlot === startSlot &&
+      existingItem.uniqueId !== item.uniqueId &&
       this.inventoryId === (existingItem.inventoryId ?? this.inventoryId)
     ) {
       if (existingItem.quantity + quantity > item.stackSize) return false;
@@ -198,23 +278,26 @@ export class BaseInventory {
 
   /**
    * Returns the uniqueId of the first item matching the given properties.
+   * Uses non-strict matching so partial property sets work (e.g., {name: 'money'})
    */
   public findItem(properties: ItemProperties) {
-    return this.mapItems().find((item) => item.match(properties))?.uniqueId;
+    return this.mapItems().find((item) => item.match(properties, false))?.uniqueId;
   }
 
   /**
    * Returns all uniqueId's for items matching the given properties.
+   * Uses non-strict matching so partial property sets work (e.g., {name: 'money'})
    */
   public findItems(properties: ItemProperties) {
-    return this.mapItems().filter((item) => item.match(properties) && item.uniqueId);
+    return this.mapItems().filter((item) => item.match(properties, false) && item.uniqueId);
   }
 
   /**
    * Returns the total count of all items matching the given properties.
+   * Uses non-strict matching so partial property sets work (e.g., {name: 'money'})
    */
   public getItemCount(properties: Partial<ItemProperties>) {
-    return this.mapItems().reduce((total, item) => (item.match(properties) ? total + item.quantity : total), 0);
+    return this.mapItems().reduce((total, item) => (item.match(properties, false) ? total + item.quantity : total), 0);
   }
 
   /**

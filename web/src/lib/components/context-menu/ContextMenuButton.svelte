@@ -56,38 +56,38 @@ function onMouseLeaveMenu() {
 
 <div class="relative" bind:this={parentRef}>
   <button
-    class="p-2 w-full flex gap-2 text-sm items-center hover:bg-secondary"
+    class="px-3 py-2 w-full flex gap-2.5 text-xs items-center text-white/80 hover:text-white hover:bg-white/10 rounded-md transition-colors"
     onclick={buttonClick}
     onmouseenter={onMouseEnterButton}
     onmouseleave={onMouseLeaveButton}
   >
     {#if icon}
-      <Icon {icon} width="20" height="20" />
+      <Icon {icon} width="16" height="16" class="text-white/60" />
     {/if}
-    {label}
+    <span class="font-medium">{label}</span>
 
     {#if menu}
-      <div class="ml-4">
-        <Icon icon="hugeicons:arrow-right-01" width="20" height="20" />
+      <div class="ml-auto">
+        <Icon icon="hugeicons:arrow-right-01" width="14" height="14" class="text-white/40" />
       </div>
     {/if}
   </button>
   {#if menu && submenuVisible}
     <div
-      class="absolute -top-2 bg-background/90 p-2 min-w-[120px] w-fit shadow-lg flex-col gap-2 z-[54]"
-      style={`left: ${parentRef.clientWidth}px`}
+      class="absolute -top-1.5 bg-black/90 backdrop-blur-sm p-1.5 min-w-[120px] w-fit shadow-2xl flex-col gap-0.5 z-[54] rounded-lg border border-white/10"
+      style={`left: ${parentRef.clientWidth + 4}px`}
       onmouseenter={onMouseEnterMenu}
       onmouseleave={onMouseLeaveMenu}
     >
       {#each menu as menuBtn}
         <button
-          class="p-2 flex gap-2 text-sm items-center hover:bg-secondary w-full whitespace-nowrap"
+          class="px-3 py-2 flex gap-2.5 text-xs items-center text-white/80 hover:text-white hover:bg-white/10 w-full whitespace-nowrap rounded-md transition-colors"
           onclick={buttonClick}
         >
           {#if menuBtn.icon}
-            <Icon icon={menuBtn.icon} width="20" height="20" />
+            <Icon icon={menuBtn.icon} width="16" height="16" class="text-white/60" />
           {/if}
-          {menuBtn.label}
+          <span class="font-medium">{menuBtn.label}</span>
         </button>
       {/each}
     </div>
